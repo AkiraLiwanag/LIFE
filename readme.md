@@ -1,3 +1,6 @@
+a Life Game, created by A.A.P.L. 
+Incubator Studios
+
 you must have Python 3 installed then open it in your terminal
 
 
