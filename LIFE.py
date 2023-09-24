@@ -194,8 +194,6 @@ def choice():
         		chat = random.sample(chats, 1)
         		print(chat)
 
-
-
         if choice == "donate":
             print("Contact the developer at akiraliwanag@gmail.com")
             time.sleep(5)
@@ -205,7 +203,6 @@ def choice():
             exit()
         if choice == "quit":
             exit()
-
 
 chooseAgain = "yes"
 while chooseAgain:
