@@ -149,7 +149,12 @@ def choice():
             print(country)
             print("Server at:")
             time.sleep(1)
+            negat = ["-", "+"]
+            nega = random.sample(negat, 1)
+            print(nega)   
             print(round(random.random()*90,4))
+            nega = random.sample(negat, 1)
+            print(nega)   
             print(round(random.random()*180,4))
             time.sleep(2)
             print("and got away with:")
