@@ -213,11 +213,6 @@ while chooseAgain:
     choice()
     print()
 
-
-
-
-
-
 chooseAgain = input()
 
 
