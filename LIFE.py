@@ -12,15 +12,16 @@ print()
 time.sleep(3)
 
 def displayIntro():
-    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio")
+    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack")
     print()
 
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack':
         print("what do you want to do?")
         choice = input()
+
         if choice == "pray":
             print("You start praying to a God...")
             time.sleep(7)
@@ -138,6 +139,27 @@ def choice():
             time.sleep(3)
             print("You gave alms to the needy")
             time.sleep(3)
+
+        if choice == "hack":
+            time.sleep(5)
+            print("You manage to connect to...")
+            time.sleep(2)
+            countries = ["Canada", "Sweden", "China", "Beijing", "New York", "California", "L.A.", "San Francisco", "Detroit", "Colorado", "Newark", "New Jersey", "Australia", "Gold Coast", "Thailand", "North Korea", "Pyongyang", "Seoul", "Tokyo", "Osaka", "Japan", "Fujian", "Kyoto", "Manila", "Palawan", "Siargao", "Sultan Kudarat", "Davao", "Sydney", "Poland", "Uzebkistan", "Kyrgystan", "Turkey", "Iraq", "Iran", "Bolivia", "Iceland", "Lithuania", "Greenland", "UK", "France", "Spain", "Rome", "Greece", "Amsterdam", "Netherlands", "Boracay", "Indonesia", "Russia", "Ukraine", "Africa", "Antarctica", "Alaska", "South Carolina", "North Carolina", "Philadelphia", "Brooklyn", "Mexico", "Brazil", "Taiwan", "Burma", "Cambodia", "Vietnam", "India", "Bangladesh", "New Delhi", "Bombay", "Philippines", "Italy", "Belgium", "Denmark", "Colombia", "Argentina", "Albania", "Algeria", "Andora", "Angola", "Antigua and Barbuda", "Armenia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Belarus", "Belize", "Benin", "Bhutan", "Bosnia", "Botswana", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon", "Chad", "Chile", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia", "Congo", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Guinea", "Estonia", "Swaziland", "Ethiopia", "Fiji", "Gabon", "Gambia", "Ghana", "Guatemala", "Guyana", "Haiti", "Honduras", "Hungary", "Israel", "Italy", "Jamaica", "Kenya", "Jordan", "Laos", "Latvia", "Lebanon", "Liberia", "Liechtenstein", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mauritiana", "Mauritius", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Oman", "Pakistan", "Palau", "Palestine State", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Portugal", "Qatar", "Romania", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Slovakia", "Slovenia", "Solomon Islands", "South Africa", "South Korea", "South Sudan", "Sri Lanka", "Sudan", "Suriname", "Syria", "Tajikistan", "Tanzania", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Yemen", "Zambia", "Zimbabwe"]
+            country = random.sample(countries, 1)
+            print(country)
+            print("Server at:")
+            time.sleep(1)
+            print(round(random.random()*90,4))
+            print(round(random.random()*180,4))
+            time.sleep(2)
+            print("and got away with:")
+            time.sleep(3)
+            print(random.randint(0,999999999))
+            monies = ["Dollars", "Rupies", "Yen", "Pesos", "Pounds", "Coins", "Arcade Coins", "Mickey Mouse Money", "Francs", "Shekels", "Tugriks", "Indian Rupees", "Singapore Dollars", "Rubles", "Dinars", "Yuans", "Bahts", "Afghanis", "Riyals", "Kronas", "Riels", "DDOS attacks", "Botnets", "Credit Card Numbers", "E-mail addresses", "Business Addresses", "Home Addresses", "Passwords", "Mobile Numbers", "Telephone Numbers", "STD", "spits", "garbage", "sickness", "nudes", "hate", "likes"]
+            money = random.sample(monies, 1)
+            print(money)      
+            time.sleep(3)
+
 
         if choice == "dhammapada":
             time.sleep(2)
