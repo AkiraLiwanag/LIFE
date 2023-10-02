@@ -7,7 +7,7 @@ os.system('clear')
 os.system("CLS")
 
 print()
-print("Incubator Studios presents ~ LIFE GAME 3.2 ~ Created by A.A.P.L. All Rights Reserved /donate")
+print("Incubator Studios presents ~ LIFE GAME 4.0 ~ Created by A.A.P.L. All Rights Reserved /donate")
 print()
 time.sleep(3)
 
