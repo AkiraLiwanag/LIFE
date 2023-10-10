@@ -7,17 +7,17 @@ os.system('clear')
 os.system("CLS")
 
 print()
-print("Incubator Studios presents ~ LIFE GAME 4.0 ~ Created by A.A.P.L. All Rights Reserved /donate")
+print("Incubator Studios presents ~ LIFE GAME 4.5 ~ Created by A.A.P.L. All Rights Reserved /donate")
 print()
 time.sleep(3)
 
 def displayIntro():
-    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer")
+    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate")
     print()
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate':
         print("what do you want to do?")
         choice = input()
         print("You chose: " + "" + choice)
@@ -39,7 +39,7 @@ def choice():
             print("Glorious is my Lord the most Great, Glorious is my Lord the most great, Glorious is my Lord the most great")
             time.sleep(4)
             print()
-            print("Allah hears those who praise him, our Lord all praise is for you, praise which abundant, excellent, and blessed")
+            print("Allah hears those who praise him, our Lord all praise is for you, praise which is abundant, excellent, and blessed")
             time.sleep(6)
             print()
             print("Glorious is my Lord the most Great, Glorious is my Lord the most great, Glorious is my Lord the most great")
@@ -68,7 +68,7 @@ def choice():
             print("Glorious is my Lord the most Great, Glorious is my Lord the most great, Glorious is my Lord the most great")
             time.sleep(4)
             print()
-            print("Allah hears those who praise him, our Lord all praise is for you, praise which abundant, excellent, and blessed")
+            print("Allah hears those who praise him, our Lord all praise is for you, praise which is abundant, excellent, and blessed")
             time.sleep(6)
             print()
             print("Glorious is my Lord the most Great, Glorious is my Lord the most great, Glorious is my Lord the most great")
@@ -240,6 +240,20 @@ def choice():
             print(random.randint(50,100))
             time.sleep(3)
 
+        if choice == "karate":
+            time.sleep(1)
+            print()
+            print("Movement:")
+            time.sleep(3)
+            print()
+            print(random.randint(0,999))
+            print()
+            time.sleep(1)
+            opponents = ["You", "Sensei", "Opponent", "Opponent"]
+            opponent = random.sample(opponents, 1)
+            print(opponent)   
+            time.sleep(3)
+
         if choice == "hipster tarot":
             print("You draw four cards from a deck...")	
             time.sleep(4)
@@ -304,7 +318,7 @@ def choice():
             starting = ["in the depths of soul", "in as much as I want", "nevertheless", "coming up with it", "i don't know this", "thinking of it", "thinking of you", "thinking of us", "i never want to but", "carry me all the way", "i am happy", "starting", "i never know how", "as much as i would", "killing me softly", "killing us", "the quietest weather", "gray clouds above", "i see the clear sky", "while the sky is bluest", "i've never been apart", "how would i know", "will i see you again", "it came up to me", "i was surprised", "surprising", "i would", "come to me", "start with this", "a few words", "lenten season is upon us", "i love", "thinking", "stop"]
             start = random.sample(starting, 1)
             print(start)
-            middle = ["i wish i would have", "consider me", "i am looking for food", "while i am clothed", "walking the distance", "i still end up with you", "consider my wish", "halfed tree", "searching", "unsure", "not minding everyone", "listening to music", "on my computer", "typing", "eating", "sleeping", "thinking", "never missing", "stopping", "staring", "resting", "excruciating pain", "this sadness", "whie im without", "collecting", "listening", "happiness", "the surf", "inspired", "rocking the music", "travelling", "playing", "while music plays", "stirring things up", "taking a bath", "walking on the shore", "grinding"]
+            middle = ["i wish i would have", "consider me", "i am looking for food", "while i am clothed", "walking the distance", "i still end up with you", "consider my wish", "halfed tree", "searching", "unsure", "not minding everyone", "listening to music", "on my computer", "typing", "eating", "sleeping", "thinking", "never missing", "stopping", "staring", "resting", "excruciating pain", "this sadness", "while im without", "collecting", "listening", "happiness", "the surf", "inspired", "rocking the music", "travelling", "playing", "while music plays", "stirring things up", "taking a bath", "walking on the shore", "grinding"]
             mid = random.sample(middle, 1)
             print(mid)
             ending = ["i never knew how", "i be at it", "considered everything", "i died", "i slept", "its wrapped", "made a union", "the sky bleeds", "music is spoken", "chilled", "i am spoiled", "this bringeth happiness", "its up to me", "the weather is", "i stay awake", "pillows", "grains", "half of the time", "it ends here", "i take flight", "distance is", "i like this", "forever", "lets meet", "gathered my wits"]
