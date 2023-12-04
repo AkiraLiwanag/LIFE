@@ -7,17 +7,17 @@ os.system('clear')
 os.system("CLS")
 
 print()
-print("Incubator Studios presents ~ LIFE GAME 5.0 ~ Created by A.A.P.L. All Rights Reserved /donate")
+print("Incubator Studios presents ~ LIFE GAME 5.5 ~ Created by A.A.P.L. All Rights Reserved /donate")
 print()
 time.sleep(3)
 
 def displayIntro():
-    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans")
+    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg")
     print()
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg':
         print("what do you want to do?")
         choice = input()
         print("You chose: " + "" + choice)
@@ -393,6 +393,38 @@ def choice():
             print(music)
             time.sleep(3)
 
+        if choice == "equips":
+            time.sleep(2)
+            print()
+            print("head:")
+            headgear = ["samurai helmet", "bike helmet", "motorcycle helmet", "astronaut helmet", "pilot helmet", "aviator hat", "baseball cap", "backwards baseball cap", "trucker cap", "backwards trucker cap", "construction helmet", "miner helmet", "skate helmet", "ski mask", "facemask", "beanie", "birthday party hat", "pantyhose", "f13th mask", "jabbawockee mask", "none", "poring hat", "beehive", "idea bubble", "speech bubble", "bucket hat", "black bucket hat", "beige bucket hat", "orange bucket hat", "blue bucket hat", "american football helmet", "rugby helmet", "emo hair", "mohawk", "blonded semi-balded", "skinhead", "tropika", "glasses", "raybans", "shades", "spectacles", "night-vision goggles", "pilot goggles", "black-rimmed glasses", "nostril piercing", "tibetan headgear", "sikh headgear", "muslim hat", "skullcap", "muslim skullhat", "long hair", "salt and pepper", "blonde", "headphones", "earphones", "visor hat", "headband", "cat headband", "rabbit headband", "afro", "curly curls", "facial mask", "face paint", "warpaint", "unipaint", "maked-up", "bush headgear", "soldier helmet", "buddhahead", "game-night drink", "cig", "tobacco", "spliff", "straw", "british army guard headgear", "police helmet", "police mask", "hanja mask", "java mask", "african continent mask", "feather", "chef hat", "indian chief headgear", "black paint", "hijab"]
+            head= random.sample(headgear, 1)
+            print(head)
+            print("torso:")
+            torsogear = ["knight armor", "police armor", "samurai armor", "karate uniform", "police uniform", "soldier uniform", "korean robe", "japanese robe", "barong", "polo", "shirt", "black shirt", "sweater", "tanktop", "backpack", "slingbag", "none", "chest hair", "kevlar", "press vest", "bush gear", "hoodie", "white hoodie", "blue hoodie", "tight shirt", "nikes", "puma", "adidas", "coca-cola retro shirt", "rasta shirt", "sash", "soccer uniform", "american football armor", "football shirt", "soccer shirt", "referee shirt", "pacemaker", "bra", "bikini", "chest bag", "tuxedo", "suit", "bowtie", "tie", "apron", "chef uniform", "red paint", "black paint", "astronaut suit", "diving suit", "rashguard", "jersey", "bathrobe", "farmer gear", "lanyard", "muslim clothing", "sikh clothing", "tourguide uniform", "boyscout uniform", "girlscout uniform", "black sweater", "scarf", "shawl", "green hoodie", "pink hoodie", "jacket", "windbreaker", "varsity jacket", "jock jacket", "vest", "coat"]
+            torso= random.sample(torsogear, 1)
+            print(torso)
+            print("hand:")
+            handgear = ["sword", "samurai", "club", "knife", "machete", "ice cream", "food", "coffee", "pizza", "camera", "gun", "staff", "ruler", "katana", "arnis", "nunchucks", "cat", "tablet", "phone", "iphone", "android", "fruitshake", "vape", "bong", "spliff", "joint", "beer", "champagne", "chainsaw", "folder", "testpaper", "pen", "macbook", "laptop", "linux computer", "pencil", "paintbrush", "tire pump", "fire extinguisher", "measuring device", "scalpel", "diamond cutter", "diamond", "diamonds", "trash", "water", "none", "empty-hand", "spraypaint", "smartwatch", "dynamite", "c4", "whisker", "whiskey", "liquor", "flask", "leaf", "feather", "book", "novel", "junkfood", "rifle", "sniper", "handgun", "laser", "keys", "guitar", "electric guitar", "classical guitar", "ukulele", "keyboard", "burger", "twig", "plank", "paddel", "coins", "money", "dollar bills", "fruit", "vegetable", "ps4 controller", "xbox controller", "ipod", "yarn", "spear", "bow"]
+            hand= random.sample(handgear, 1)
+            print(hand)
+            print("legs:")
+            leggear = ["tights", "shorts", "cycling shorts", "skirt", "bushwear", "pants", "leggings", "elephant pants", "skinny jeans", "jeans", "none", "trunks", "pants", "pants", "pants", "holster", "bruise", "slacks", "hiking pants", "karate pants", "taekwondo pants", "mma shorts", "briefs", "sleather pants"]
+            legs= random.sample(leggear, 1)
+            print(legs)
+            print("feet:")
+            feetgear = ["slippers", "hotel slippers", "shoes", "shoes", "shoes", "shoes", "boots", "beige boots", "black army boots", "nikes", "adidas", "puma", "converse", "chucks", "none", "socks", "clogs", "leather shoes", "white shoes", "skateboard", "longboard", "sneakers", "new balance", "world balance", "fluffy shoes", "fluffy slippers", "sandals"]
+            feet= random.sample(feetgear, 1)
+            print(feet)
+
+        if choice == "rpg":
+            time.sleep(2)
+            print()
+            paths = ["You walk in a field", "You encounter an animal", "You encounter a monster", "You encounter an enemy", "You encounter a friend", "You encounter an ally", "You enter an alley", "It is night time", "The sun just rised", "It is dawn", "It is dusk", "You enter the university", "You sit down on your computer", "You just chill", "You chill in a cafe", "You feel sleepy", "You are hungry", "You walk on", "You run straight", "You run in loops", "You are tired", "You are bullied", "You are sent to the hospital", "You go on a roadtrip", "You hike", "You mine", "You are out of money", "You just earned your salary", "You spend your time waiting", "You just nearly died", "You do your assignment", "You paint", "You hum", "You rap", "You sing", "You hear someone singing", "You compose rap", "You compose a classical track", "You feel lonely", "You feel happy", "You feel ecstatic", "You yearn for something", "You feel you should meditate", "You feel you should pray", "You walk in a church", "You walk in a temple", "You walk in a mosque", "You walk in a forest", "You walk in a jungle", "You walk along the road", "You're in the city", "You ride a bus", "You ride a cab", "You take out the trash", "You find a job", "Someone gave you work", "You worship", "You're in transit", "You surf the internet", "You got hacked", "You got scammed", "You exercise", "You were commissioned in the army", "You were commisioned in the police force", "You were commissioned in the airforce", "You were commissioned in the marines", "You have a mission", "You feel inspired", "You feel uninspired", "You feel creative block", "You feel like dancing", "You hear music", "You watch TV", "You hear the radio", "You are fatigued", "You enter war", "You meet someone", "You view film showing schedules", "You browse through courses", "You walk into a market", "You think of getting souvenirs", "You explore the place"]
+            path = random.sample(paths, 1)
+            print(path)
+            time.sleep(3)
+        
         if choice == "donate":
             print("Contact the developer at akiraliwanag@gmail.com")
             time.sleep(5)
