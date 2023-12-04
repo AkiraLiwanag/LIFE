@@ -7,17 +7,17 @@ os.system('clear')
 os.system("CLS")
 
 print()
-print("Incubator Studios presents ~ LIFE GAME 5.5 ~ Created by A.A.P.L. All Rights Reserved /donate")
+print("Incubator Studios presents ~ LIFE GAME 6.0 ~ Created by A.A.P.L. All Rights Reserved /donate")
 print()
 time.sleep(3)
 
 def displayIntro():
-    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg")
+    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery")
     print()
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery':
         print("what do you want to do?")
         choice = input()
         print("You chose: " + "" + choice)
@@ -423,6 +423,18 @@ def choice():
             paths = ["You walk in a field", "You encounter an animal", "You encounter a monster", "You encounter an enemy", "You encounter a friend", "You encounter an ally", "You enter an alley", "It is night time", "The sun just rised", "It is dawn", "It is dusk", "You enter the university", "You sit down on your computer", "You just chill", "You chill in a cafe", "You feel sleepy", "You are hungry", "You walk on", "You run straight", "You run in loops", "You are tired", "You are bullied", "You are sent to the hospital", "You go on a roadtrip", "You hike", "You mine", "You are out of money", "You just earned your salary", "You spend your time waiting", "You just nearly died", "You do your assignment", "You paint", "You hum", "You rap", "You sing", "You hear someone singing", "You compose rap", "You compose a classical track", "You feel lonely", "You feel happy", "You feel ecstatic", "You yearn for something", "You feel you should meditate", "You feel you should pray", "You walk in a church", "You walk in a temple", "You walk in a mosque", "You walk in a forest", "You walk in a jungle", "You walk along the road", "You're in the city", "You ride a bus", "You ride a cab", "You take out the trash", "You find a job", "Someone gave you work", "You worship", "You're in transit", "You surf the internet", "You got hacked", "You got scammed", "You exercise", "You were commissioned in the army", "You were commisioned in the police force", "You were commissioned in the airforce", "You were commissioned in the marines", "You have a mission", "You feel inspired", "You feel uninspired", "You feel creative block", "You feel like dancing", "You hear music", "You watch TV", "You hear the radio", "You are fatigued", "You enter war", "You meet someone", "You view film showing schedules", "You browse through courses", "You walk into a market", "You think of getting souvenirs", "You explore the place"]
             path = random.sample(paths, 1)
             print(path)
+            time.sleep(3)
+
+        if choice == "archery":
+            time.sleep(2)
+            print()
+            print("You aim your bow..")
+            time.sleep(2)
+            print("You hit:")
+            print(round(random.random()*30,3))
+            print("centimeters from the bullseye with")
+            print(random.randint(50,100))
+            print("percent accuracy")
             time.sleep(3)
         
         if choice == "donate":
