@@ -7,17 +7,17 @@ os.system('clear')
 os.system("CLS")
 
 print()
-print("Incubator Studios presents ~ LIFE GAME 7.1 ~ Created by A.A.P.L. All Rights Reserved /donate")
+print("Incubator Studios presents ~ LIFE GAME 7.5 ~ Created by A.A.P.L. All Rights Reserved /donate")
 print()
 time.sleep(3)
 
 def displayIntro():
-    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP")
+    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA")
     print()
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA':
         print("what do you want to do?")
         choice = input()
         print("You chose: " + "" + choice)
@@ -211,6 +211,16 @@ def choice():
             print()
             print("You can do it!")
             time.sleep(3)
+
+        if choice == "MA":
+            time.sleep(2)
+            print()
+            mstyles = ["Africa and African America", "Aikido", "Animal and Imitative Systems in Chinese Martial Arts", "Archery, Japanese", "Baguazhang (Pa Kua Ch' uan)", "Boxing, Chinese", "Boxing, Chinese Shaolin Styles", "Boxing, European", "Brazilian Jiu Jitsu", "Budo, Bujutsu, and Bugei", "Capoeira", "China", "Chivalry", "Combatives: Military and Police Martial Art Training", "Dueling", "Europe", "External vs. Internal Chinese Martial Arts", "Folklore in the Martial Arts", "Form/Xing/Kata/Pattern Practice", "Gladiators", "Gunfighters","Hapkido", "Heralds", "Iaido", "India", "Japan", "Japanese Martial Arts, Chinese Influences on", "Jeet Kune Do", "Judo", "Kajukenbo", "Kalarippayattu", "Karate, Japanese", "Karate, Okinawan", "Kendo", "Kenpo", "Ki/Qi", "Knights", "Kobudo, Okinawan", "Korea", "Korean Martial Arts, Chinese Influences On", "Koryu Bugei, Japanese", "Krav Maga", "Kung Fu/Gungfu/Gongfu", "Masters of Defense", "Medicine, Traditional Chinese", "Meditation", "Middle East", "Mongolia", "Muay Thai", "Ninjutsu", "Okinawa", "Orders of Knighthood, Secular", "Pacific Islands", "Pankration", "Performing Arts", "Philippines", "Political Conflict and the Martial Arts", "Rank", "Religion and Spiritual Development: Ancient Mediterranean and Medieval West", "Religion and Spiritual Development: China", "Religion and Spiritual Development: India", "Religion and Spiritual Development: Japan", "Sambo", "Samurai", "Savate", "Silat", "Social Uses of the Martial Arts", "Southeast Asia", "Stage Combat", "Stickfighting, Non-Asian", "Sword, Japanese", "Swordsmanship, European Medieval", "Swordsmanship, European Renaissance", "Swordsmanship, Japanese", "Swordsmanship, Korean/Hankuk Haedong Kumdo", "T'aek'kyon", "Taekwondo", "Taijiquan (Tai Chi Ch'uan)", "Thaing", "Thang-Ta", "Training Area", "Varma Ati", "Vovinam/Viet Vo Dao", "Warrior Monks, Japanese/Sohei", "Women in the Martial Arts", "Women in the Martial Arts: Britain and North America", "Women in the Martial Arts: China", "Women in the Martial Arts: Japan", "Wrestling and Grappling: China", "Wrestling and Grappling: Europe", "Wrestilng and Grappling: India", "Wrestling and Grappling: Japan", "Wrestling, Professional", "Written Texts: China", "Written Texts: India", "Written Texts: Japan", "Xingyiquan (Hsing I Ch'uan)", "Yongchun/Wing Chun"]
+            mart = random.sample(mstyles, 3)
+            print(mart)
+            print()
+            print("-from the contents of Martial Arts of the World: An Encyclopedia")
+            time.sleep(6)
 
         if choice == "skate":
             time.sleep(5)
