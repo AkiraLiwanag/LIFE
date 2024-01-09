@@ -7,17 +7,17 @@ os.system('clear')
 os.system("CLS")
 
 print()
-print("Incubator Studios presents ~ LIFE GAME 7.5 ~ Created by A.A.P.L. All Rights Reserved /donate")
+print("Incubator Studios presents ~ LIFE GAME 8.0 ~ Created by A.A.P.L. All Rights Reserved /donate")
 print()
 time.sleep(3)
 
 def displayIntro():
-    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA")
+    print ("pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic")
     print()
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic':
         print("what do you want to do?")
         choice = input()
         print("You chose: " + "" + choice)
@@ -470,7 +470,63 @@ def choice():
             print()
             color = ["red", "crimson", "maroon", "scarlet", "orange", "amber", "rust", "salmon", "green", "emerald", "lime", "olive", "yellow", "gold", "lemon", "mustard", "blue", "azure", "indigo", "teal", "purple", "lavender", "magenta", "violet", "brown", "beige", "chocolate", "sienna", "gray", "charcoal", "silver", "slate", "black", "ebony", "jet", "onyx", "white", "alabaster", "ivory", "pearl", "pink", "sky blue", "neon green", "neon yellow", "neon orange", "neon blue"]
             colors = random.sample(color, 5)
-            print(colors)
+            print(color)
+
+        if choice == "Magic":
+            print()
+            print("OPPONENT")
+            print()
+            deck1 = ["Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Island", "Island", "Island", "Island", "Island", "Island", "Island", "Island", "Island", "Island", "Island", "Island", "Joint Assault (Spell, 1 Forest)", "Joint Assault (Spell, 1 Forest)", "Ice Cage (Spell, 1 Land and 1 Island)", "Lair Delve (Spell, 2 Land and 1 Forest)", "Lair Delve (Spell, 2 Land and 1 Forest)", "Overrun (Spell, 2 Land and 3 Forest)", "Llanowar Elves (Creature, 1 Forest)", "Llanowar Elves (Creature, 1 Forest)", "Nephalia Smuggler (Creature, 1 Island)", "Wingcrafter (Creature, 1 Island)", "Wingcrafter (Creature, 1 Island)", "Runeclaw Bear (Creature, 1 Land and 1 Forest)", "Nightshade Peddler (Creature, 1 Land and 1 Forest)", "Nightshade Peddler (Creature, 1 Land and 1 Forest)", "Tandem Lookout (Creature, 2 Land and 1 Island)", "Tandem Lookout (Creature, 2 Land and 1 Island)", "Trusted Forcemage (2 Land and 1 Forest)", "Trusted Forcemage (Creature, 2 Land and 1 Forest)", "Trusted Forcemage (Creature, 2 Land and 1 Forest)", "Latch Seeker (Creature, 1 Land and 2 Island)", "Latch Seeker (Creature, 1 Land and 2 Island)", "Wolfir Avenger (Creature, 1 Land and 2 Forest", "Druid's Familiar (Creature, 3 Land and 1 Forest)", "Druid's Familiar (Creature, 3 Land and 1 Forest)", "Elgaud Shieldmate (Creature, 3 Land and 1 Island)", "Elgaud Shieldmate (Creature, 3 Land and 1 Island)", "Flowering Lumberknot (Creature, 3 Land and 1 Forest)", "Flowering Lumberknot (Creature, 3 Land and 1 Forest)", "Geist Trapper (Creature, 4 Land and 1 Forest)", "Acidic Slime (Creature, 3 Land and 2 Forest)", "Wolfir Silverheart (Creature, 3 Land and 2 Forest)", "Vorstclaw (Creature, 4 Land and 2 Forest)", "Vorstclaw (Creature, 4 Land and 2 Forest)", "Deadeye Navigator (Creature, 4 Land and 2 Island)", "Pathbreaker Wurm (Creature, 4 Land and 2 Forest)"]
+            hand1 = random.sample(deck1, 1)
+            hand2 = random.sample(deck1, 1)
+            hand3 = random.sample(deck1, 1)
+            hand4 = random.sample(deck1, 1)
+            hand5 = random.sample(deck1, 1)
+            hand6 = random.sample(deck1, 1)
+            hand7 = random.sample(deck1, 1)
+            next1 = random.sample(deck1, 10)
+            print("Hand:")
+            print(hand1)
+            print(hand2)
+            print(hand3)
+            print(hand4)
+            print(hand5)
+            print(hand6)
+            print(hand7)
+            print()
+            print("Next on deck:")
+            print(next1)
+            print()
+            print("-from Bound by Strength deck")
+            print()
+            print("YOU")
+            print()
+            deck2 = ["Evolving Wilds", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Forest", "Plains", "Plains", "Plains", "Plains", "Plains", "Plains", "Plains", "Plains","Plains", "Plains", "Plains", "Plains", "Plains", "Plains", "Plains", "Tranquil Expanse", "Immolating Glare (Spell, 1 Land and 1 Plain)", "Lead by Example (Spell, 1 Land and 1 Forest)", "Lead by Example (Spell, 1 Land and 1 Forest)", "Mighty Leap (Spell, 1 Land and 1 Plain)", "Shoulder to Shoulder (Spell, 2 Land and 1 Plain)", "Shoulder to Shoulder (Spell, 2 Land and 1 Plain)", "Isolation Zone (Spell, 2 Land and 2 Plain)", "Isolation Zone (Spell, 2 Land and 2 Plain)", "Iona's Blessing (Spell, 3 Land and 3 Plain)", "Allied Reinforcements (Spell, 3 Land and 3 Plain)", "Expedition Envoy (Creature, 1 Plain)", "Expedition Envoy (Creature, 1 Plain)", "Kitesail Scout (Creature, 1 Plain)", "Kitesail Scout (Creature, 1 Plain)", "Cliffside Lookout (Creature, 1 Plain)","Cliffside Lookout (Creature, 1 Plain)", "Oran-Rief Invoker (Creature, 1 Land and 1 Forest)", "Makindi Aeronaut (Creature, 1 Land and 1 Plain)", "Makindi Aeronaut (Creature, 1 Land and 1 Plain)", "Kor Castigator (Creature, 1 Land and 1 Plain)", "Kor Castigator (Creature, 1 Land and 1 Plain)", "Joraga Auxiliary (Creature, 1 Land and 1 Forest and 1 Plain)", "Joraga Auxiliary (Creature, 1 Land and 1 Forest and 1 Plain)", "Veteran Warleader (Creature, 1 Land and 1 Forest and 1 Plain)", "Shadow Glider (Creature, 2 Land and 1 Plain)", "Shadow Glider (Creature, 2 Land and 1 Plain)", "Kor Sky Climber (Creature, 2 Land and 1 Plain)", "Kor Sky Climber (Creature, 2 Land and 1 Plain)", "Relief Captain (Creature, 2 Land and 2 Plain)", "Relief Captain (Creature, 2 Land and 2 Plain)", "Saddleback Lagac (Creature, 3 Land and 1 Forest)", "Expedition Raptor (Creature, 3 Land and 2 Plain)", "Expedition Raptor (Creature, 3 Land and 2 Plain)", "Steppe Glider (Creature, 4 Land and 1 Plain)", "Angel of Renewal (Creature, 5 Land and 1 Plain)", "Gladeheart Cavalry (Creature, 5 Land and 2 Forest)"]
+            hand21 = random.sample(deck2, 1)
+            hand22 = random.sample(deck2, 1)
+            hand23 = random.sample(deck2, 1)
+            hand24 = random.sample(deck2, 1)
+            hand25 = random.sample(deck2, 1)
+            hand26 = random.sample(deck2, 1)
+            hand27 = random.sample(deck2, 1)
+            next2 = random.sample(deck2, 10)
+            print("Hand:")
+            print(hand21)
+            print(hand22)
+            print(hand23)
+            print(hand24)
+            print(hand25)
+            print(hand26)
+            print(hand27)
+            print()
+            print("Next on deck:")
+            print(next2)
+            print()
+            print("-from Concerted Effort deck")
+            print()
+            turn = ["First turn is yours", "Opponent is first turn"]
+            turnt = random.sample(turn, 1)
+            print(turnt)
        
         if choice == "donate":
             print("Contact the developer at akiraliwanag@gmail.com")
