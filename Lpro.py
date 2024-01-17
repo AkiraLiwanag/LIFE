@@ -4,7 +4,7 @@ import sys
 import os
 
 print()
-print("# I.S. LIFE-8.2 by A.A.P.L.")
+print("# I.S. LIFE-8.3 by A.A.P.L.")
 print()
 time.sleep(3)
 print ("'commands'")
@@ -12,13 +12,13 @@ print()
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly':
         print("#")
         choice = input()
         print("input: " + "" + choice)
 
         if choice == "commands":
-            print("/pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody")
+            print("/pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly")
 
         if choice == "pray":
             print("You start praying to a God...")
@@ -431,6 +431,22 @@ def choice():
             tracks = ["NO RULES by Mija, bloody white", "How Low by Ludacris", "BURN IT DOWN by Kayzo", "COUNT DANKULA by GENGHAR, GHASTLY", "Chum by Earl Sweatshirt", "O.P.U.S. by Subtronics", "Cyclops Rocks by Subtronics", "Wyclef Jean by Young Thug", "Wild for the Night by A$AP Rocky, Skrillex", "Hercules by Young Thug", "Angels by A$AP Rocky", "F**kin' Problems by A$AP Rocky, Drake, 2 Chainz, Kendrick Lamar", "Goldie by A$AP Rocky", "Don't Think It Over by Her's", "In My Mind - Deathpact Reprise by ILLENIUM, Excision, HALIENE, Deathpact", "Morning Star's Fall by Caster, Mantis", "Worldwide Suicide by In Hearts Wake, PhaseOne", "Never Let Go by Dion Timmer, Haley Maze", "Dont Wake Me Up by Oliverse", "Someone Else by Bear Grillz, Elle Vee", "Bottle Of Rain by Kayzo, POORSTACY", "GIGACHAD by Kai Wachi", "You're Gonna Love Me by Eliminate, Leah Culver", "Love, Love, Love by As Tall As Lions", "MakeDamnSure by Taking Back Sunday", "Kings And Queens by Thirty Seconds To Mars", "Maps by Yeah Yeah Yeahs", "Poetically Pathetic by Amber Pacific", "Tonight by FM Static", "Anthem Of Our Dying Day by Story Of The Year", "MAKE U MISS ME by Kayzo, Seon", "NEWS FLASH by Kayzo, Kamiyada+", "Fight or Flight by Alison Wonderland, MEMBA", "YUKON (INTERLUDE) by Joji", "My Hero by Foo Fighters", "Called Out In The Dark by Snow Patrol", "my god by Trevor Hall", "Real Love by Jess Glynne, Clean Bandit", "MIND YOUR BUSINESS by will.i.am, Britney Spears", "Obstacle 1 by Interpol", "Full Circle by HAELOS", "Hold On by HAELOS", "Fire Ina Hole by Method Man, Redman", "Rockit by Herbie Hancock", "Hymn For The Weekend by Coldplay", "Agent Orange by Slapshock", "I'm Gonna Be by Post Malone", "I'm Not Okay by My Chemical Romance", "Rude Boy by Rihanna", "D.O.A. (Death Of Auto-Tune) by JAY-Z", "Roses by The Chainsmokers, ROZES", "Stick Stickly by Attack Attack!", "Jail pt 2 by Kanye West", "Risk by Deftones", "This Is What You Came For by Calvin Harris, Rihanna", "Hot-n-Fun by N.E.R.D, Nelly Furtado", "Work by Rihanna, Drake", "777 by Kid Trunks, XXXTENTACION", "Music by Madonna", "What's My Name by Rihanna, Drake", "Love Never Felt So Good by Michael Jackson, Justin Timberlake", "Sweet Disposition by The Temper Trap", "Forrest Gump by Frank Ocean", "Purification by Purification", "Total Liberation by Gather", "Soaked In Torment by All Out War", "Scream & Shout by will.i.am, Britney Spears", "Decode by Paramore", "Miracle by Paramore", "Messiah by Alison Wonderland, M-Phazes", "Heart Skipped A Beat by The xx", "Basic Space by The xx", "Intro by The xx", "Islands by The xx", "Crystalized by The xx", "VCR by The xx", "Mood Ring by Lorde", "Sudden Desire by Hayley Williams", "August 10 by Khruangbin", "The Pioneers by Bloc Party", "Chasing Cars by Snow Patrol", "RUNNING by The Kid LAROI", "Shake It by Metro Station", "The Less I Know The Better by Tame Impala", "Miss The Rage by Trippie Red, Playboi Carti", "This Is America by Childish Gambino", "Consistency by Megan Thee Stallion, Jhene Aiko", "Flexing So Hard by Higher Brothers", "Laundry by QUIX", "Cologne by Clean Bandit, Nikki Cislyn, Javeon", "Pachuca Sunrise by Minus The Bear", "Feeling Like The End by Joji", "Nomadic by Higher Brothers, Joji", "Upper Echelon by Travis Scott, T.I., 2 Chainz", "Same Ol' Mistakes by Rihanna", "Power Trip by J. Cole, Miguel", "Hits From The Bong by Cypress Hill", "Y.O.U. by Method Man, Redman"]
             music = random.sample(tracks, 4)
             print(music)
+            time.sleep(3)
+
+        if choice == "monopoly":
+            print("You rolled:")
+            time.sleep(2)
+            dice1 = ["1", "2", "3", "4", "5", "6", "7", "8"]
+            dice2 = ["1", "2", "3", "4", "5", "6", "7", "8"]
+            roll1 = random.sample(dice1, 1)
+            roll2 = random.sample(dice2, 1)
+            print(roll1)
+            print(roll2)
+            time.sleep(2)
+            boxes = ["Mediterranean Avenue", "Community Chest", "Baltic Avenue", "INCOME TAX", "Reading Railroad", "Oriental Avenue", "Chance", "Vermont Avenue", "Connecticut Avenue", "Jail", "St. Charles Palace", "Electric Company", "States Avenue", "Virginia Avenue", "Pennsylvania Railroad", "St. James Place", "Community Chest", "Free Parking", "Kentucky Avenue", "Chance", "Indiana Avenue", "Illinois Avenue", "B&O Railroad", "Atlantic Avenue", "Ventnor Avenue", "Water Works", "Marvin Gardens", "GO TO JAIL", "Pacific Avenue", "North Carolina Avenue", "Community Chest", "Pennsylvania Avenue", "Short Line", "Chance", "Park Place", "LUXURY TAX", "Boardwalk"]
+            box = random.sample(boxes, 1)
+            print("And landed in =")
+            print(box)
             time.sleep(3)
 
         if choice == "equips":
