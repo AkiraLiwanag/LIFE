@@ -12,3 +12,5 @@ pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, 
 #to save current console log into a text file type this when you open the script:   
 
 python3 -u LIFE.py | tee yourfilename321.txt
+
+LIFE-pro.nano : https://is-life-pro.weebly.com
