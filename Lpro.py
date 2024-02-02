@@ -843,6 +843,8 @@ def choice():
             exit()
         if choice == "quit":
             exit()
+        if choice == "save":
+            exit()
 
 chooseAgain = "yes"
 while chooseAgain:
