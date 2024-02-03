@@ -6,8 +6,8 @@ z = open("LIFE-logs.txt", "a")
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
-print("# I.S. LIFE-9.1 by A.A.P.L.")
-print("# I.S. LIFE-9.1 by A.A.P.L.", file=z)
+print("# I.S. LIFE-9.2 by A.A.P.L.")
+print("# I.S. LIFE-9.2 by A.A.P.L.", file=z)
 print()
 print(file=z)
 ct = datetime.datetime.now()
@@ -23,7 +23,7 @@ print(file=z)
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer':
         print("#")
         print("#", file=z)
         choice = input()
@@ -31,8 +31,8 @@ def choice():
         print("input: " + "" + choice, file=z)
 
         if choice == "commands":
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense")
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense", file=z)
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer")
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer", file=z)
 
         if choice == "pray":
             print("You start praying to a God...")
@@ -42,6 +42,57 @@ def choice():
             print("You finished praying", file=z)
             time.sleep(3)
             
+        if choice == "prayer":
+            print("OM MANI PADME HUM")
+            print("OM MANI PADME HUM", file=z)
+            
+        if choice == "stats":
+            print("Health:")
+            print("Health:", file=z)
+            health = (round(random.random()*120))
+            print(health)
+            print(health, file=z)
+            print("Confidence:")
+            print("Confidence:", file=z)
+            confidence = (round(random.random()*120))
+            print(confidence)
+            print(confidence, file=z)
+            print("Oxygen:")
+            print("Oxygen:", file=z)
+            oxygen  = (round(random.random()*120))
+            print(oxygen)
+            print(oxygen, file=z)
+            print("Happiness:")
+            print("Happiness:", file=z)
+            happiness = (round(random.random()*120))
+            print(happiness)
+            print(happiness, file=z)
+            print("Luck:")
+            print("Luck:", file=z)
+            luck = (round(random.random()*120))
+            print(luck)
+            print(luck, file=z)
+            print("Release:")
+            print("Release:", file=z)
+            release = (round(random.random()*120))
+            print(release)
+            print(release, file=z)
+            print("Energy:")
+            print("Energy:", file=z)
+            energy = (round(random.random()*120))
+            print(energy)
+            print(energy, file=z)
+            print("Opportunity:")
+            print("Opportunity:", file=z)
+            opportunity = (round(random.random()*120))
+            print(opportunity)
+            print(opportunity, file=z)
+            print("Chemicals:")
+            print("Chemicals:", file=z)
+            chemicals = (round(random.random()*120))
+            print(chemicals)
+            print(chemicals, file=z)
+
         if choice == "light incense":
             print()
             print(file=z)
@@ -54,7 +105,7 @@ def choice():
                  "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "bail", "Abstract Art", "Abstract Expressionism", "Academicism", "Analytical Cubism", "Art Deco", "Art Nouveau", "Ashcan School", "Banksy", "Baroque", "Byzantine Art", "Classicism", "Cloisonnism", "Color Field", "Conceptual Art", "Constructivism", "Cubism", "Cubo-Futurism", "Dadaism", "Dutch Golden Age", "Early Netherlandish", "Early Renaissance", "Expressionism", "Fauvism", "Futurism", "Geometric Abstract Art", "Gothic Art", "High Renaissance", "Hudson River School", "Impressionism", "Italian Renaissance", "Kitsch", "Luminism", "Mannerism", "Metaphysical Art", "Minimalism", "Modernism", "Naive Art/ Primitivism", "Neo-Baroque", "Neo-Classicism", "Neo-Dada", "Neo Expressionism", "Neoplasticism", "New Realism", "Northern Renaissance", "Op-Art", "Orientalism", "Orphism", "Pointilism", "Pop Art", "Pop Surrealism", "Post-Imressionism", "Pre-Raphaelites", "Precisionism", "Proto Renaissance", "Purism", "Realism", "Regionalism", "Renaissance", "Rococo", "Romanticism", "Social Realism", "Socialist Realism", "Suprematism", "Surrealism", "Symbolism", "Synthetic Cubism", "Synthetism", "Tenebrism", "Tonalism", "Tubism", "Ukiyo-E", "Verism", "Alternative", "Anime", "Blues", "Classical", "Comedy", "Commercials", "Country", "Dance", "Easy Listening", "Electronic", "Enka", "French Pop", "Folk Music", "German Folk", "German Pop", "Fitness and Workout", "Hip-Hop/Rap", "Holiday Music", "Indie Pop", "Industrial", "Inspirational", "Instrumental", "Jazz", "K-Pop", "Karaoke", "Latin", "Metal", "New Age", "Opera", "Pop", "R&B/Soul", "Reggae", "Rock", "Soundtracks", "Spoken Word", "Tex-Mex/Tejano", "Vocal", "World", "You met", "You fought with", "You fought with", "You defeated", "You defeated","You defeated", "You were sent to the hospital by", "You were defeated by", "You healed", "You were healed by", "You jailed", "You pranked", "You were pranked by", "You were jailed by", "you were beat by", "you were K.Ode by", "a stranger", "a child", "an emo", "a doctor", "a soldier", "a police", "a homeless person", "a mom", "a gamer", "a dancer", "an artist", "a peasant", "a prince", "a princess", "a King", "a Queen", "a lawyer", "a vendor", "an alien", "a Mexican", "a nurse", "a lizard", "a woman", "a girl", "a boy", "Akira", "Pedro the dog", "an optometrist", "a physician", "a psychologist", "a psychiatrist", "a teacher", "White Tara", "Green Tara", "a ninja", "a gangster", "Dollars", "Rupies", "Yen", "Pesos", "Pounds", "Coins", "Arcade Coins", "Mickey Mouse Money", "Francs", "Shekels", "Tugriks", "Indian Rupees", "Singapore Dollars", "Rubles", "Dinars", "Yuans", "Bahts", "Afghanis", "Riyals", "Kronas", "Riels", "DDOS attacks", "Botnets", "Credit Card Numbers", "E-mail addresses", "Business Addresses", "Home Addresses", "Passwords", "Mobile Numbers", "Telephone Numbers", "STD", "spits", "garbage", "sickness", "nudes", "hate", "likes", "Canada", "Sweden", "China", "Beijing", "New York", "California", "L.A.", "San Francisco", "Detroit", "Colorado", "Newark", "New Jersey", "Australia", "Gold Coast", "Thailand", "North Korea", "Pyongyang", "Seoul", "Tokyo", "Osaka", "Japan", "Fujian", "Kyoto", "Manila", "Palawan", "Siargao", "Sultan Kudarat", "Davao", "Sydney", "Poland", "Uzbekistan", "Kyrgystan", "Turkey", "Iraq", "Iran", "Bolivia", "Iceland", "Lithuania", "Greenland", "UK", "France", "Spain", "Rome", "Greece", "Amsterdam", "Netherlands", "Boracay", "Indonesia", "Russia", "Ukraine", "Africa", "Antarctica", "Alaska", "South Carolina", "North Carolina", "Philadelphia", "Brooklyn", "Mexico", "Brazil", "Taiwan", "Burma", "Cambodia", "Vietnam", "India", "Bangladesh", "New Delhi", "Bombay", "Philippines", "Italy", "Belgium", "Denmark", "Colombia", "Argentina", "Albania", "Algeria", "Andora", "Angola", "Antigua and Barbuda", "Armenia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Belarus", "Belize", "Benin", "Bhutan", "Bosnia", "Botswana", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon", "Chad", "Chile", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia", "Congo", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Guinea", "Estonia", "Swaziland", "Ethiopia", "Fiji", "Gabon", "Gambia", "Ghana", "Guatemala", "Guyana", "Haiti", "Honduras", "Hungary", "Israel", "Italy", "Jamaica", "Kenya", "Jordan", "Laos", "Latvia", "Lebanon", "Liberia", "Liechtenstein", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mauritiana", "Mauritius", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Oman", "Pakistan", "Palau", "Palestine State", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Portugal", "Qatar", "Romania", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Slovakia", "Slovenia", "Solomon Islands", "South Africa", "South Korea", "South Sudan", "Sri Lanka", "Sudan", "Suriname", "Syria", "Tajikistan", "Tanzania", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Yemen", "Zambia", "Zimbabwe", "samurai helmet", "bike helmet", "motorcycle helmet", "astronaut helmet", "pilot helmet", "aviator hat", "baseball cap", "backwards baseball cap", "trucker cap", "backwards trucker cap", "construction helmet", "miner helmet", "skate helmet", "ski mask", "facemask", "beanie", "birthday party hat", "pantyhose", "f13th mask", "jabbawockee mask", "none", "poring hat", "beehive", "idea bubble", "speech bubble", "bucket hat", "black bucket hat", "beige bucket hat", "orange bucket hat", "blue bucket hat", "american football helmet", "rugby helmet", "emo hair", "mohawk", "blonded semi-balded", "skinhead", "tropika", "glasses", "raybans", "shades", "spectacles", "night-vision goggles", "pilot goggles", "black-rimmed glasses", "nostril piercing", "tibetan headgear", "sikh headgear", "muslim hat", "skullcap", "muslim skullhat", "long hair", "salt and pepper", "blonde", "headphones", "earphones", "visor hat", "headband", "cat headband", "rabbit headband", "afro", "curly curls", "facial mask", "face paint", "warpaint", "unipaint", "maked-up", "bush headgear", "soldier helmet", "buddhahead", "game-night drink", "cig", "tobacco", "spliff", "straw", "british army guard headgear", "police helmet", "police mask", "hanja mask", "java mask", "african continent mask", "feather", "chef hat", "indian chief headgear", "black paint", "hijab", "knight armor", "police armor", "samurai armor", "karate uniform", "police uniform", "soldier uniform", "korean robe", "japanese robe", "barong", "polo", "shirt", "black shirt", "sweater", "tanktop", "backpack", "slingbag", "none", "chest hair", "kevlar", "press vest", "bush gear", "hoodie", "white hoodie", "blue hoodie", "tight shirt", "nikes", "puma", "adidas", "coca-cola retro shirt", "rasta shirt", "sash", "soccer uniform", "american football armor", "football shirt", "soccer shirt", "referee shirt", "pacemaker", "bra", "bikini", "chest bag", "tuxedo", "suit", "bowtie", "tie", "apron", "chef uniform", "red paint", "black paint", "astronaut suit", "diving suit", "rashguard", "jersey", "bathrobe", "farmer gear", "lanyard", "muslim clothing", "sikh clothing", "tourguide uniform", "boyscout uniform", "girlscout uniform", "black sweater", "scarf", "shawl", "green hoodie", "pink hoodie", "jacket", "windbreaker", "varsity jacket", "jock jacket", "vest", "coat", "sword", "samurai", "club", "knife", "machete", "ice cream", "food", "coffee", "pizza", "camera", "gun", "staff", "ruler", "katana", "arnis", "nunchucks", "cat", "tablet", "phone", "iphone", "android", "fruitshake", "vape", "bong", "spliff", "joint", "beer", "champagne", "chainsaw", "folder", "testpaper", "pen", "macbook", "laptop", "linux computer", "pencil", "paintbrush", "tire pump", "fire extinguisher", "measuring device", "scalpel", "diamond cutter", "diamond", "diamonds", "trash", "water", "none", "empty-hand", "spraypaint", "smartwatch", "dynamite", "c4", "whisker", "whiskey", "liquor", "flask", "leaf", "feather", "book", "novel", "junkfood", "rifle", "sniper", "handgun", "laser", "keys", "guitar", "electric guitar", "classical guitar", "ukulele", "keyboard", "burger", "twig", "plank", "paddel", "coins", "money", "dollar bills", "fruit", "vegetable", "ps4 controller", "xbox controller", "ipod", "yarn", "spear", "bow", "tights", "shorts", "cycling shorts", "skirt", "bushwear", "pants", "leggings", "elephant pants", "skinny jeans", "jeans", "none", "trunks", "pants", "pants", "pants", "holster", "bruise", "slacks", "hiking pants", "karate pants", "taekwondo pants", "mma shorts", "briefs", "sleather pants", "slippers", "hotel slippers", "shoes", "shoes", "shoes", "shoes", "boots", "beige boots", "black army boots", "nikes", "adidas", "puma", "converse", "chucks", "none", "socks", "clogs", "leather shoes", "white shoes", "skateboard", "longboard", "sneakers", "new balance", "world balance", "fluffy shoes", "fluffy slippers", "sandals", "You walk in a field", "You encounter an animal", "You encounter a monster", "You encounter an enemy", "You encounter a friend", "You encounter an ally", "You enter an alley", "It is night time", "The sun just rised", "It is dawn", "It is dusk", "You enter the university", "You sit down on your computer", "You just chill", "You chill in a cafe", "You feel sleepy", "You are hungry", "You walk on", "You run straight", "You run in loops", "You are tired", "You are bullied", "You are sent to the hospital", "You go on a roadtrip", "You hike", "You mine", "You are out of money", "You just earned your salary", "You spend your time waiting", "You just nearly died", "You do your assignment", "You paint", "You hum", "You rap", "You sing", "You hear someone singing", "You compose rap", "You compose a classical track", "You feel lonely", "You feel happy", "You feel ecstatic", "You yearn for something", "You feel you should meditate", "You feel you should pray", "You walk in a church", "You walk in a temple", "You walk in a mosque", "You walk in a forest", "You walk in a jungle", "You walk along the road", "You're in the city", "You ride a bus", "You ride a cab", "You take out the trash", "You find a job", "Someone gave you work", "You worship", "You're in transit", "You surf the internet", "You got hacked", "You got scammed", "You exercise", "You were commissioned in the army", "You were commisioned in the police force", "You were commissioned in the airforce", "You were commissioned in the marines", "You have a mission", "You feel inspired", "You feel uninspired", "You feel creative block", "You feel like dancing", "You hear music", "You watch TV", "You hear the radio", "You are fatigued", "You enter war", "You meet someone", "You view film showing schedules", "You browse through courses", "You walk into a market", "You think of getting souvenirs", "You explore the place", "red", "crimson", "maroon", "scarlet", "orange", "amber", "rust", "salmon", "green", "emerald", "lime", "olive", "yellow", "gold", "lemon", "mustard", "blue", "azure", "indigo", "teal", "purple", "lavender", "magenta", "violet", "brown", "beige", "chocolate", "sienna", "gray", "charcoal", "silver", "slate", "black", "ebony", "jet", "onyx", "white", "alabaster", "ivory", "pearl", "pink", "sky blue", "neon green", "neon yellow", "neon orange", "neon blue"]
             result = random.sample(nano, 1)
             print(result)
-            print(result,file=z)        
+            print(result, file=z)        
             
         if choice == "muslim prayer":
             time.sleep(3)
