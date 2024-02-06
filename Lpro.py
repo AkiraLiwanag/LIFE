@@ -2,7 +2,7 @@ import random
 import time
 import datetime
 
-z = open("files/LIFE-logs_aki.txt", "a")
+z = open("files/LIFE-logs.txt", "a")
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
