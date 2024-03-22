@@ -3,7 +3,7 @@ Incubator Studios
 
 "Like ripples in a pond when a rock is thrown.."
 
-LIFE-pro is a text-based terminal program in python3 programming language that gives the meta-information of lived experience that utilizes real-life karmic point system to determine the results of a chosen function. It has the aim for personal learning. As it's backbone being based mainly on the Random programming function, it not only successfully makes the concept of being in terms with personal spiritual wealth a solid supporting foundation but also delivers the desired prompt results acutely with the said concept. The program gives the user an interface to interact with personal meta-reality."
+LIFE-pro is a text-based terminal program in python3 programming language that gives the meta-information of lived experience that utilizes real-life karmic point system to determine the results of a chosen function. It has the aim for personal learning. As it's backbone being based mainly on the Random programming function, it not only successfully makes the concept of being in terms with personal spiritual wealth a solid supporting foundation but also delivers the desired prompt results acutely with the said concept. The program gives the user an interface to interact with personal meta-reality.
 
 you must have Python 3 installed then run this command in your terminal: 
 
