@@ -6,7 +6,7 @@ z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
-title = "# I.S. LIFE-12.4 by A.A.P.L."
+title = "# I.S. LIFE-12.8 by A.A.P.L."
 ct = datetime.datetime.now()
 print(title, ct)
 print(title, ct, file=z)
@@ -20,7 +20,7 @@ print(file=z)
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting':
         print("#")
         print("#", file=z)
         choice = input()
@@ -28,8 +28,8 @@ def choice():
         print("input: " + "" + choice, file=z)
 
         if choice == "commands":
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time")
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time", file=z)
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting")
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting", file=z)
 
         if choice == 'print time':
             t_time = datetime.datetime.now()
@@ -136,8 +136,31 @@ def choice():
             result = random.sample(nano, 1)
             star = "***"
             print(star, result)
-            print(star, result, file=z)         
-            
+            print(star, result, file=z)
+
+        if choice == "entry":
+            _entry = "Entry: "
+            gates = ["Gate 1", "Gate 2", "Gate 3", "Gate 4", "Gate 5", "Gate 6", "Gate 7", "Gate 8", "Gate 9"]
+            phases = ["Phase 1", "Phase 2", "Phase 3", "Phase 4", "Phase 5", "Phase 6", "Phase 7", "Phase 8", "Phase 9", "Phase 10"]
+            floors = (round(random.random()*102))
+            _floor = "Floor"
+            gate = random.sample(gates, 1)
+            phase = random.sample(phases, 1)
+            rooms = (round(random.random()*102))
+            _room = "Room"
+            print(_entry, gate, phase, _floor, floors, _room, rooms)
+            print(_entry, gate, phase, _floor, floors, _room, rooms, file=z)
+
+        if choice == "posting":
+            _have = "You have"
+            _posting = "job postings with"
+            _default = "defaults"
+            _post = "Posting:"
+            postings = (round(random.random()*4))
+            defaults = (round(random.random()*15))
+            print(_post, _have, postings, _posting, defaults, _default)
+            print(_post, _have, postings, _posting, defaults, _default, file=z)
+           
         if choice == "muslim prayer":
             time.sleep(3)
             print("Allah Hu Akbar")
