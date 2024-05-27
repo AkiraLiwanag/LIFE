@@ -6,7 +6,7 @@ z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
-title = "# I.S. LIFE-17.3 by A.A.P.L."
+title = "# I.S. LIFE-17.6 by A.A.P.L."
 ct = datetime.datetime.now()
 print(title, ct)
 print(title, ct, file=z)
@@ -20,7 +20,7 @@ print(file=z)
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu':
         print("#")
         print("#", file=z)
         choice = input()
@@ -28,8 +28,8 @@ def choice():
         print("input: " + "" + choice, file=z)
 
         if choice == "commands":
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc)")
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc)", file=z)
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu")
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu", file=z)
 
         if choice == 'print time':
             t_time = datetime.datetime.now()
@@ -137,6 +137,44 @@ def choice():
             brews = "heBrews:"
             print(brews, verse)
             print(brews, verse, file=z)
+
+        if choice == "Patient Simu":
+            time.sleep(0)
+            print()
+            t_time = datetime.datetime.now()
+            patient = "PATIENT:"
+            initials = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+            name = random.sample(initials, 1)
+            surname = random.sample(initials, 1)
+            n = "name:"
+            ages = (round(random.random()*100))
+            age = "age:"
+            genders = ["male", "female"]
+            gender = random.sample(genders, 1)
+            g = "gender:"
+            localities = ["local", "global"]
+            locality = random.sample(localities, 1)
+            l = "locality:"
+            temperature = random.randrange(25, 45)
+            temp = "body temperature:"
+            pulse = random.randrange(30, 200)
+            pu = "pulse rate:"
+            respiration = random.randrange(5, 45)
+            rr = "respiration rate:"
+            bloodp = ["normal", "elevated", "stage 1", "stage 2"]
+            pressure = random.sample(bloodp, 1)
+            bp = "blood pressure:"
+            symptoms = ["chills", "fever", "numbness and/or tingling and/or electric tweaks", "light-headed", "dizzy", "mouth is dry", "nauseated", "sick (flu, need to vomit etc.)", "short of breath", "sleepy", "sweaty", "thirsty", "tired", "weak",  "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a",]
+            symptom = random.sample(symptoms, random.randint(1,12))
+            s = "symptoms:"
+            others = ["can't breathe normally", "losing hearing", "sounds are too loud", "ringing or hissing in my ears", "can't move one side", "can't defecate normally", "can't urinate normally", "can't remember normally", "blindness", "double vision", "blurred vision", "can't sleep normally", "can't smell things normally", "can't speak normally", "can't excrete solid feces", "can't stop scratching", "can't stop sweating", "can't swallow normally", "can't taste properly", "can't walk normally", "can't write normally", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a"]
+            osymptoms = random.sample(others, random.randint(1,12))
+            othersy = "other symptoms:"
+            msymptoms = ["anxiety", "social phobias", "panic disorders", "obsessive compulsive disorder", "post-traumatic stress disorder", "opossitional defiant disorder", "conduct disorder", "attention deficit hyperactivity disorder", "bipolar disorder", "depression", "amnesia", "depersonalisation disorder" ,"dissociative identity disorder", "anorexia", "bulimia nervosa", "binge eating disorder", "paranoid personality disorder", "delusional (paranoid) disorder" ,"schizophrenia", "post-traumatic stress disorder", "psychosis", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a"]
+            missue = random.sample(msymptoms, 2)
+            m = "mental issue:"
+            print(t_time, patient, n, name, surname, age, ages, g, gender, l, locality, temp, temperature, pu, pulse, rr, respiration, bp, pressure, s, symptom, othersy, osymptoms, m, missue)
+            print(t_time, patient, n, name, surname, age, ages, g, gender, l, locality, temp, temperature, pu, pulse, rr, respiration, bp, pressure, s, symptom, othersy, osymptoms, m, missue, file=z)
 
         if choice == "Earth Science" or choice == "SCI":
             time.sleep(1)
