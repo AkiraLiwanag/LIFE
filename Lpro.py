@@ -161,7 +161,7 @@ def choice():
             pu = "pulse rate:"
             respiration = random.randrange(5, 45)
             rr = "respiration rate:"
-            bloodp = ["normal", "elevated", "stage 1", "stage 2"]
+            bloodp = ["normal", "normal", "normal", "elevated", "elevated", "stage 1", "stage 2"]
             pressure = random.sample(bloodp, 1)
             bp = "blood pressure:"
             symptoms = ["chills", "fever", "numbness and/or tingling and/or electric tweaks", "light-headed", "dizzy", "mouth is dry", "nauseated", "sick (flu, need to vomit etc.)", "short of breath", "sleepy", "sweaty", "thirsty", "tired", "weak",  "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a", "n/a",]
