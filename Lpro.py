@@ -6,7 +6,7 @@ z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
-title = "# I.S. LIFE-17.86 by A.A.P.L."
+title = "# I.S. LIFE-18.0 by A.A.P.L."
 ct = datetime.datetime.now()
 print(title, ct)
 print(title, ct, file=z)
@@ -20,7 +20,7 @@ print(file=z)
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra':
         print("#")
         print("#", file=z)
         choice = input()
@@ -28,8 +28,8 @@ def choice():
         print("input: " + "" + choice, file=z)
 
         if choice == "commands":
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law)")
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law)", file=z)
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra")
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra", file=z)
 
         if choice == 'print time':
             t_time = datetime.datetime.now()
@@ -129,6 +129,53 @@ def choice():
             print("You light an incense...")
             print("You light an incense...", file=z)
             time.sleep(3)
+
+        if choice == "the heart sutra":
+            time.sleep(2)
+            print()
+            print("The Bodhisattva of Compassion, / When he meditated deeply, / Saw the emptiness of all five skandhas / And sundered the bonds that caused him suffering.")
+            print("The Bodhisattva of Compassion, / When he meditated deeply, / Saw the emptiness of all five skandhas / And sundered the bonds that caused him suffering.", file=z)
+            time.sleep(8)
+            print()
+            print("Here then, / Form is no other than emptiness, / Emptiness no other than form. / Form is only emptiness, / Emptiness only form.")
+            print("Here then, / Form is no other than emptiness, / Emptiness no other than form. / Form is only emptiness, / Emptiness only form.", file=z)
+            time.sleep(8)
+            print()
+            print("Feeling, thought, and choice, / Consciousness itself, / Are the same as this.")
+            print("Feeling, thought, and choice, / Consciousness itself, / Are the same as this.", file=z)
+            time.sleep(8)
+            print()
+            print("All things are by nature void / They are not born or destroyed / Nor are they stained or pure / Nor do they wax or wane")
+            print("All things are by nature void / They are not born or destroyed / Nor are they stained or pure / Nor do they wax or wane", file=z)
+            time.sleep(8)
+            print()
+            print("So, in emptiness, no form, / No feeling, thought, or choice, / Nor is there consciousness. / No eye, ear, nose, tongue, body, mind; / No colour, sound, smell, taste, touch, / Or what the mind takes hold of, / Nor even act of sensing.")
+            print("So, in emptiness, no form, / No feeling, thought, or choice, / Nor is there consciousness. / No eye, ear, nose, tongue, body, mind; / No colour, sound, smell, taste, touch, / Or what the mind takes hold of, / Nor even act of sensing.", file=z)
+            time.sleep(10)
+            print()
+            print("No ignorance or end of it, / Nor all that comes of ignorance; / No withering, no death, / No end of them.")
+            print("No ignorance or end of it, / Nor all that comes of ignorance; / No withering, no death, / No end of them.", file=z)
+            time.sleep(7)
+            print()
+            print("Nor is there pain, or cause of pain, / Or cease in pain, or noble path / To lead from pain; / Not even wisdom to attain! / Attainment too is emptiness.")
+            print("Nor is there pain, or cause of pain, / Or cease in pain, or noble path / To lead from pain; / Not even wisdom to attain! / Attainment too is emptiness.", file=z)
+            time.sleep(8)
+            print()
+            print("So know that the Bodhisattva / Holding to nothing whatever, / But dwelling in Prajna wisdom, / Is freed of delusive hindrance, / Rid of the fear bred by it, / And reaches clearest Nirvana.")
+            print("So know that the Bodhisattva / Holding to nothing whatever, / But dwelling in Prajna wisdom, / Is freed of delusive hindrance, / Rid of the fear bred by it, / And reaches clearest Nirvana.", file=z)
+            time.sleep(9)
+            print()
+            print("All Buddhas of past and present, / Buddhas of future time, / Using this Prajna wisdom, / Come to full and perfect vision.")
+            print("All Buddhas of past and present, / Buddhas of future time, / Using this Prajna wisdom, / Come to full and perfect vision.", file=z)
+            time.sleep(8)
+            print()
+            print("Hear then the great dharani, / The radiant peerless mantra, / The Prajnaparamita / Whose words allay all pain; Hear and believe its truth!")
+            print("Hear then the great dharani, / The radiant peerless mantra, / The Prajnaparamita / Whose words allay all pain; Hear and believe its truth!", file=z)
+            time.sleep(8)
+            print()
+            print("Gate Gate Paragate Parasamgate / Bodhi Svaha / Gate Gate Paragate Parasamgate / Bodhi Svaha / Gate Gate Paragate Parasamgate / Bodhi Svaha")
+            print("Gate Gate Paragate Parasamgate / Bodhi Svaha / Gate Gate Paragate Parasamgate / Bodhi Svaha / Gate Gate Paragate Parasamgate / Bodhi Svaha", file=z)
+            time.sleep(10)
 
         if choice == "heBrews":
             time.sleep(2)
