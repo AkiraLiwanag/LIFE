@@ -40,7 +40,6 @@ def choice():
         if choice == 'search':
             print("Search:")
             zen = input()
-            print("Search: " + "" + zen, file=z)
             print()
             print(file=z)
             with open(r"LIFE-logs.txt", 'r') as fp:
