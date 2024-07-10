@@ -2,13 +2,12 @@ import random
 import time
 import datetime
 import threading
-import sys
 
 z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
-title = "# I.S. LIFE-20.0 by A.A.P.L."
+title = "# I.S. LIFE-21.0 by A.A.P.L."
 ct = datetime.datetime.now()
 print(title, ct)
 print(title, ct, file=z)
@@ -22,7 +21,7 @@ print(file=z)
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra' and choice !='License' and choice !='police' and choice !='prad' and choice !='climb' and choice !='chemistry' and choice !='ch' and choice !='weapon start' and choice !='wstart':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra' and choice !='License' and choice !='police' and choice !='prad' and choice !='climb' and choice !='chemistry' and choice !='ch' and choice !='weapon start' and choice !='wstart' and choice !='teletubby':
         print("#")
         print("#", file=z)
         choice = input()
@@ -30,8 +29,8 @@ def choice():
         print("input: " + "" + choice, file=z)
 
         if choice == "commands":
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart)")
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart)", file=z)
+            print("blank for nano | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby")
+            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby", file=z)
 
         if choice == 'print time':
             t_time = datetime.datetime.now()
@@ -193,6 +192,11 @@ def choice():
             brews = "heBrews:"
             print(brews, verse)
             print(brews, verse, file=z)
+
+        if choice == 'teletubby':
+            print("You think of a command")
+            print("You think of a command", file=z)
+            time.sleep(2)
 
         if choice == "legal terms" or choice == "Law":
             time.sleep(1)
@@ -1318,6 +1322,8 @@ def choice():
                 print(values, letter6, letter7, letter8, letter9, letter10, value2)
                 print()
                 time.sleep(.3)
+                print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+                print()
                 print("OM MANI PADME HUM")
                 print()
                 time.sleep(0)
