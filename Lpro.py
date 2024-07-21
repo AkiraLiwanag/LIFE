@@ -7,15 +7,15 @@ z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
-title = "# I.S. LIFE-21.0 by A.A.P.L."
+title = "# I.S. LIFE-22.0 by A.A.P.L."
 ct = datetime.datetime.now()
 print(title, ct)
 print(title, ct, file=z)
 print()
 print(file=z)
 time.sleep(0)
-print ("'commands'")
-print ("'commands'", file=z)
+print ("type 'commands'")
+print ("type 'commands'", file=z)
 print()
 print(file=z)
 
@@ -25,18 +25,48 @@ def choice():
         print("#")
         print("#", file=z)
         choice = input()
+        print()
+        print(file=z)
         print("input: " + "" + choice)
         print("input: " + "" + choice, file=z)
+        print()
+        print(file=z)
 
         if choice == "commands":
-            print("blank for nano | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby")
-            print("blank for random / pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, search, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby", file=z)
+            print("[blank input] for nano | note/save, search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby")
+            print("[blank input] for nano | note/save, search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby", file=z)
 
         if choice == 'print time':
             t_time = datetime.datetime.now()
             l_time = "Time: "
             print(l_time, t_time)
             print(l_time, t_time, file=z)
+
+        if choice == 'note':
+            t_time = datetime.datetime.now()
+            l_time = "| Time:"
+            print("type in note")
+            print("type in note", file=z)
+            print()
+            print(file=z)
+            save = input()
+            print()
+            print(file=z)
+            print("note: " + "" + save, l_time, t_time)
+            print("note: " + "" + save, l_time, t_time, file=z)
+
+        if choice == 'save':
+            t_time = datetime.datetime.now()
+            l_time = "| Time:"
+            print("type in note")
+            print("type in note", file=z)
+            print()
+            print(file=z)
+            save = input()
+            print()
+            print(file=z)
+            print("save: " + "" + save, l_time, t_time)
+            print("save: " + "" + save, l_time, t_time, file=z)
 
         if choice == 'search':
             print("Search:")
@@ -72,51 +102,27 @@ def choice():
             print("OM MANI PADME HUM", file=z)
             
         if choice == "stats":
-            print("Health:")
-            print("Health:", file=z)
+            stat = "stats:"
+            hea = "Health:"
             health = (round(random.random()*120))
-            print(health)
-            print(health, file=z)
-            print("Confidence:")
-            print("Confidence:", file=z)
+            conf = "Confidence:"
             confidence = (round(random.random()*120))
-            print(confidence)
-            print(confidence, file=z)
-            print("Oxygen:")
-            print("Oxygen:", file=z)
+            oxyg = "Oxygen:"
             oxygen  = (round(random.random()*120))
-            print(oxygen)
-            print(oxygen, file=z)
-            print("Happiness:")
-            print("Happiness:", file=z)
+            happ = "Happiness:"
             happiness = (round(random.random()*120))
-            print(happiness)
-            print(happiness, file=z)
-            print("Luck:")
-            print("Luck:", file=z)
+            luc = "Luck:"
             luck = (round(random.random()*120))
-            print(luck)
-            print(luck, file=z)
-            print("Release:")
-            print("Release:", file=z)
+            rele = "Release:"
             release = (round(random.random()*120))
-            print(release)
-            print(release, file=z)
-            print("Energy:")
-            print("Energy:", file=z)
+            ener = "Energy:"
             energy = (round(random.random()*120))
-            print(energy)
-            print(energy, file=z)
-            print("Opportunity:")
-            print("Opportunity:", file=z)
+            oppo = "Opportunity:"
             opportunity = (round(random.random()*120))
-            print(opportunity)
-            print(opportunity, file=z)
-            print("Chemicals:")
-            print("Chemicals:", file=z)
+            chem = "Chemicals:"
             chemicals = (round(random.random()*120))
-            print(chemicals)
-            print(chemicals, file=z)
+            print(stat, hea, health, conf, confidence, oxyg, oxygen, happ, happiness, luc, luck, rele, release, ener, energy, oppo, opportunity, chem, chemicals)
+            print(stat, hea, health, conf, confidence, oxyg, oxygen, happ, happiness, luc, luck, rele, release, ener, energy, oppo, opportunity, chem, chemicals, file=z)
             
         if choice == "progress":
             time.sleep(2)
@@ -1289,8 +1295,6 @@ def choice():
         if choice == "close":
             exit()
         if choice == "quit":
-            exit()
-        if choice == "save":
             exit()
 
         if choice == "weapon start" or choice == "wstart":
