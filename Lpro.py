@@ -1012,7 +1012,7 @@ def choice():
             print("Your input: " + "" + chat)
             print("Your input: " + "" + chat, file=z)
             for _ in range(3):
-                time.sleep(3)
+                time.sleep(random.randint(1,3))
                 print()
                 print(file=z)
                 lokalhost = "LOKALHOST: "
