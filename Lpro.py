@@ -982,8 +982,6 @@ def koran():
 
 def message():
     chat = input()
-    print()
-    print(file=z)
     print("$" + "" + usr + "" + " " + "" + "$" + "" + " " + "" + chat)
     print("$" + "" + usr + "" + " " + "" + "$" + "" + " " + "" + chat, file=z)
     for _ in range(3):
