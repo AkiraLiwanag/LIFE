@@ -981,11 +981,11 @@ def koran():
     print(file=z)
 
 def message():
-    chat = input("Type your message: ")
+    chat = input()
     print()
     print(file=z)
-    print("Your input: " + "" + chat)
-    print("Your input: " + "" + chat, file=z)
+    print("$" + "" + usr + "" + " " + "" + "$" + "" + " " + "" + chat)
+    print("$" + "" + usr + "" + " " + "" + "$" + "" + " " + "" + chat, file=z)
     for _ in range(3):
         time.sleep(random.randint(1,3))
         print()
