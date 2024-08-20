@@ -3,12 +3,14 @@ import time
 import datetime
 import threading
 
+usr = "[nishes]"
+
 z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
 def version():
-    title = "# I.S. LIFE-24.0 by A.A.P.L."
+    title = "# I.S. LIFE-25.0 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -1328,15 +1330,11 @@ def weapon_start():
 def choice():
     choice = ''
     while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra' and choice !='License' and choice !='police' and choice !='prad' and choice !='climb' and choice !='chemistry' and choice !='ch' and choice !='weapon start' and choice !='wstart' and choice !='teletubby' and choice !='note' and choice !='save' and choice !='journal' and choice !='version' and choice !='ai' and choice !='auto-mat' and choice !='AAM':
-        print("#")
-        print("#", file=z)
-        choice = input()
         print()
         print(file=z)
-        print("input: " + "" + choice)
-        print("input: " + "" + choice, file=z)
-        print()
-        print(file=z)
+        choice = input(usr + "" + " " + "" + "$" + "" + " ")
+        print(usr + "" + " " + "" + "$" + "" + " " + choice, file=z)
+
 
         if choice == "version":
             version()
