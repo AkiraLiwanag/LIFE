@@ -3,14 +3,19 @@ import time
 import datetime
 import threading
 
-usr = "[nishes]"
-
+print()
+def set_usr(newUsr):
+    global usr
+    usr = newUsr
+new = input("Set session username: ")
+set_usr("[" + "" + new + "" + "]" + "" + " " + "" + "$" + "" + " ")
+print()
 z = open("LIFE-logs.txt", "a", buffering=1)
 print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
 def version():
-    title = "# I.S. LIFE-25.0 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> I.S. LIFE-27.0 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -23,13 +28,12 @@ print ("type 'commands'", file=z)
 
 def commands():
     print(" version | [blank input] for nano | note / journal / save | search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message [lh], brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby, (ai) auto-mat [AAM]")
-    print(" version | [blank input] for nano | note / journal / save | search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message [lh], brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, muslim prayer, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby, (ai) auto-mat [AAM]", file=z)
 
 def print_time():
     t_time = datetime.datetime.now()
     l_time = "Time: "
     print(l_time, t_time)
-    print(l_time, t_time, file=z)
+    print(usr, l_time, t_time, file=z)
 
 def note():
     t_time = datetime.datetime.now()
@@ -42,7 +46,7 @@ def note():
     print()
     print(file=z)
     print("note: " + "" + save, l_time, t_time)
-    print("note: " + "" + save, l_time, t_time, file=z)
+    print(usr + "" + " " + "" + "note: " + "" + save, l_time, t_time, file=z)
 
 def journal():
     t_time = datetime.datetime.now()
@@ -55,7 +59,7 @@ def journal():
     print()
     print(file=z)
     print("journal: " + "" + save, l_time, t_time)
-    print("journal: " + "" + save, l_time, t_time, file=z)
+    print(usr + "" + " " + "" + "journal: " + "" + save, l_time, t_time, file=z)
 
 def save():
     t_time = datetime.datetime.now()
@@ -68,7 +72,7 @@ def save():
     print()
     print(file=z)
     print("save: " + "" + save, l_time, t_time)
-    print("save: " + "" + save, l_time, t_time, file=z)
+    print(usr + "" + " " + "" + "save: " + "" + save, l_time, t_time, file=z)
 
 def search():
     zen = input("Search: ")
@@ -84,10 +88,10 @@ def search():
 
 def pray():
     print("You start praying to a God...")
-    print("You start praying to a God...", file=z)
+    print(usr + "" + " " + "" + "You start praying to a God...", file=z)
     time.sleep(7)
     print("You finished praying")
-    print("You finished praying", file=z)
+    print(usr + "" + " " + "" + "You finished praying", file=z)
     time.sleep(3)
 
 def climb():
@@ -96,11 +100,11 @@ def climb():
     climb = random.sample(climbing, 1)
     clim = "climb:"
     print(clim, climb)
-    print(clim, climb, file=z)
+    print(usr, clim, climb, file=z)
 
 def prayer():
     print("OM MANI PADME HUM")
-    print("OM MANI PADME HUM", file=z)
+    print(usr + "" + " " + "" + "OM MANI PADME HUM", file=z)
 
 def stats():
     stat = "stats:"
@@ -123,7 +127,7 @@ def stats():
     chem = "Chemicals:"
     chemicals = (round(random.random()*120))
     print(stat, hea, health, conf, confidence, oxyg, oxygen, happ, happiness, luc, luck, rele, release, ener, energy, oppo, opportunity, chem, chemicals)
-    print(stat, hea, health, conf, confidence, oxyg, oxygen, happ, happiness, luc, luck, rele, release, ener, energy, oppo, opportunity, chem, chemicals, file=z)
+    print(usr, stat, hea, health, conf, confidence, oxyg, oxygen, happ, happiness, luc, luck, rele, release, ener, energy, oppo, opportunity, chem, chemicals, file=z)
 
 def progress():
     time.sleep(2)
@@ -136,13 +140,13 @@ def progress():
     print(probability)
     print("quads")
     print("quads", file=z)
-    print(progress, percentage, probability, file=z)
+    print(usr, progress, percentage, probability, file=z)
 
 def light_incense():
     print()
     print(file=z)
     print("You light an incense...")
-    print("You light an incense...", file=z)
+    print(usr + "" + " " + "" + "You light an incense...", file=z)
     time.sleep(3)
 
 def heart_sutra():
@@ -198,11 +202,11 @@ def hebrews():
     verse = random.sample(heBrews, 4)
     brews = "heBrews:"
     print(brews, verse)
-    print(brews, verse, file=z)
+    print(usr, brews, verse, file=z)
 
 def teletubby():
     print("You think of a command")
-    print("You think of a command", file=z)
+    print(usr + "" + " " + "" + "You think of a command", file=z)
     time.sleep(2)
 
 def legal_terms():
@@ -213,7 +217,7 @@ def legal_terms():
     law = random.sample(legal_terms, 3)
     l = "law:"
     print(l, law)
-    print(l, law, file=z)
+    print(usr, l, law, file=z)
 
 def biology():
     time.sleep(0)
@@ -225,7 +229,7 @@ def biology():
     b = random.sample(biology, 2)
     bio = "biology:"
     print(bio, b)
-    print(bio, b, file=z)
+    print(usr, bio, b, file=z)
 
 def chemistry():
     time.sleep(.4)
@@ -238,7 +242,7 @@ def chemistry():
     ch = random.sample(chemistry, 6)
     chem = "chemistry:"
     print(chem, ch)
-    print(chem, ch, file=z)
+    print(usr, chem, ch, file=z)
 
 def patient_simu():
     time.sleep(0)
@@ -276,7 +280,7 @@ def patient_simu():
     missue = random.sample(msymptoms, 2)
     m = "mental issue:"
     print(t_time, patient, n, name, surname, age, ages, g, gender, l, locality, temp, temperature, pu, pulse, rr, respiration, bp, pressure, s, symptom, othersy, osymptoms, m, missue)
-    print(t_time, patient, n, name, surname, age, ages, g, gender, l, locality, temp, temperature, pu, pulse, rr, respiration, bp, pressure, s, symptom, othersy, osymptoms, m, missue, file=z)
+    print(usr, t_time, patient, n, name, surname, age, ages, g, gender, l, locality, temp, temperature, pu, pulse, rr, respiration, bp, pressure, s, symptom, othersy, osymptoms, m, missue, file=z)
 
 def earth_science():
     time.sleep(1)
@@ -290,7 +294,7 @@ def earth_science():
     earth = random.sample(science, 3)
     sci = "earth science:"
     print(sci, earth)
-    print(sci, earth, file=z)
+    print(usr, sci, earth, file=z)
 
 def psychology():
     time.sleep(0)
@@ -307,7 +311,7 @@ def psychology():
     psych = random.sample(psychology, 4)
     p = "psychology:"
     print(p, psych)
-    print(p, psych, file=z)
+    print(usr, p, psych, file=z)
 
 def medicals():
     time.sleep(0)
@@ -320,14 +324,14 @@ def medicals():
     medical = random.sample(medicals, 1)
     med = "Medicals:"
     print(med, medical)
-    print(med, medical, file=z)
+    print(usr, med, medical, file=z)
 
 def license():
     license = ["You have no license", "You have no license", "You have a license"]
     lice = random.sample(license, 1)
     lic = "License:"
     print(lic, lice)
-    print(lic, lice, file=z)
+    print(usr, lic, lice, file=z)
 
 def police():
     time.sleep(0)
@@ -346,7 +350,7 @@ def police():
     location = (round(random.random()*99999999,10))
     po = "police:"
     print(po, cod, urge, sus, suspectcode, pol, loc, dire, location)
-    print(po, cod, urge, sus, suspectcode, pol, loc, dire, sus, suspectcode, location, file=z)
+    print(usr, po, cod, urge, sus, suspectcode, pol, loc, dire, sus, suspectcode, location, file=z)
 
 def clearance():
     time.sleep(0)
@@ -354,7 +358,7 @@ def clearance():
     clear = random.sample(clearance, 1)
     med = "Clearance:"
     print(med, clear)
-    print(med, clear, file=z)
+    print(usr, med, clear, file=z)
 
 def nano():
     nano  = ["You level up", "You level up", "You level up", "Ace of Hearts", "Two of Hearts", "Three of Hearts", "Four of Hearts", "Five of Hearts", "Six of Hearts", "Seven of Hearts", "Eight of Hearts", "Nine of Hearts", "Ten of Hearts", "Jack of Hearts", "Queen Of Hearts", "King of Hearts", "Ace of Clubs", "Two of Clubs", "Three of Clubs", "Four of Clubs", "Five of Clubs", "Six of Clubs", "Seven of Clubs", "Eight of Clubs", "Nine of Clubs", "Ten of Clubs", "Jack of Clubs", "Queen Of Clubs", "King of Clubs", "Ace of Diamonds", "Two of Diamonds", "Three of Diamonds", "Four of Diamonds", "Five of Diamonds", "Six of Diamonds", "Seven of Diamonds", "Eight of Diamonds", "Nine of Diamonds", "Ten of Diamonds", "Jack of Diamonds", "Queen Of Diamonds", "King of Diamonds", "Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades", "Five of Spades", "Six of Spades", "Seven of Spades", "Eight of Spades", "Nine of Spades", "Ten of Spades", "Jack of Spades", "Queen Of Spades", "King of Spades", "Joker", "Joker", "empty bottle", "bottle of wine", "wine glass", "bottle of iced tea", "energy drink", "lemon juice", "pack of green peas", "shirt", "bed", "headphones", "earphones", "blanket", "tablet", "kindle", "pills", "pack of coffee beans", "cup of coffee", "junkfood", "medicine", "spoon", "fork", "Nintendo Switch", "laptop", "mobile phone", "electric fan", "chair", "guitar", "keyboard", "piano", "tv", "monitor", "oil", "hashish", "marijuana", "cigarette", "vape", "pillow", "dog food", "bike", "car", "scooter", "skateboard", "printer", "shards of glass", "garbage", "strips of sleather", "food", "bottle of water", "bible", "Dhammapada", "yoga mat", "helmet", "chewing gum", "vitamins", "shirt", "sweater", "pants", "working pants", "skirt", "underwear", "parachute", "gun", "knife", "sword", "katana", "oatmeal", "chain", "slippers", "shoes", "book", "wires", "credit card", "stove", "oven", "hat", "bucket hat", "baseball cap", "beanie", "hoodie", "necklace", "ring", "gold ring", "diamond ring", "diamond", "diamonds", "painting", "pencil", "ballpoint pen", "sketchpad", "crayon", "box of crayons", "paint", "spray paint", "fruit", "lettuce", "carrot", "watermelon", "orange", "apple", "banana", "pear", "gold", "gold bar", "pistol", "lantern", "lamp", "umbrella", "newspaper", "Sega", "ecstasy", "Nintendo 64", "calculator", "brownies", "pie", "loaf bread", "aviator shades", "shutter shades", "CD", "floppy disk", "mp3 player", "walkman", "cassette", "ticket", "food stub", "ski mask", "spear", "nunchucks", "frying pan", "beans", "charger", "guitar pick", "mic", "digicam", "GoPro", "night vision goggles", "sniper rifle", "DS4 Playstation controller", "CDJ", "Raybans", "smartwatch", "modem", "axe", "Canada", "Sweden", "China", "Beijing", "New York", "California", "L.A.", "San Francisco", "Detroit", "Colorado", "Newark", "New Jersey", "Australia", "Gold Coast", "Thailand", "North Korea", "Pyongyang", "Seoul", "Tokyo", "Osaka", "Japan", "Fujian", "Kyoto", "Manila", "Palawan", "Siargao", "Sultan Kudarat", "Davao", "Sydney", "Poland", "Uzbekistan", "Kyrgystan", "Turkey", "Iraq", "Iran", "Bolivia", "Iceland", "Lithuania", "Greenland", "UK", "France", "Spain", "Rome", "Greece", "Amsterdam", "Netherlands", "Boracay", "Indonesia", "Russia", "Ukraine", "Africa", "Antarctica", "Alaska", "South Carolina", "North Carolina", "Philadelphia", "Brooklyn", "Mexico", "Brazil", "Taiwan", "Burma", "Cambodia", "Vietnam", "India", "Bangladesh", "New Delhi", "Bombay", "Philippines", "Africa and African America", "Aikido", "Animal and Imitative Systems in Chinese Martial Arts", "Archery, Japanese", "Baguazhang (Pa Kua Ch' uan)", "Boxing, Chinese", "Boxing, Chinese Shaolin Styles", "Boxing, European", "Brazilian Jiu Jitsu", "Budo, Bujutsu, and Bugei", "Capoeira", "China", "Chivalry", "Combatives: Military and Police Martial Art Training", "Dueling", "Europe", "External vs. Internal Chinese Martial Arts", "Folklore in the Martial Arts", "Form/Xing/Kata/Pattern Practice", "Gladiators", "Gunfighters","Hapkido", "Heralds", "Iaido", "India", "Japan", "Japanese Martial Arts, Chinese Influences on", "Jeet Kune Do", "Judo", "Kajukenbo", "Kalarippayattu", "Karate, Japanese", "Karate, Okinawan", "Kendo", "Kenpo", "Ki/Qi", "Knights", "Kobudo, Okinawan", "Korea", "Korean Martial Arts, Chinese Influences On", "Koryu Bugei, Japanese", "Krav Maga", "Kung Fu/Gungfu/Gongfu", "Masters of Defense", "Medicine, Traditional Chinese", "Meditation", "Middle East", "Mongolia", "Muay Thai", "Ninjutsu", "Okinawa", "Orders of Knighthood, Secular", "Pacific Islands", "Pankration", "Performing Arts", "Philippines", "Political Conflict and the Martial Arts", "Rank", "Religion and Spiritual Development: Ancient Mediterranean and Medieval West", "Religion and Spiritual Development: China", "Religion and Spiritual Development: India", "Religion and Spiritual Development: Japan", "Sambo", "Samurai", "Savate", "Silat", "Social Uses of the Martial Arts", "Southeast Asia", "Stage Combat", "Stickfighting, Non-Asian", "Sword, Japanese", "Swordsmanship, European Medieval", "Swordsmanship, European Renaissance", "Swordsmanship, Japanese", "Swordsmanship, Korean/Hankuk Haedong Kumdo", "T'aek'kyon", "Taekwondo", "Taijiquan (Tai Chi Ch'uan)", "Thaing", "Thang-Ta", "Training Area", "Varma Ati", "Vovinam/Viet Vo Dao", "Warrior Monks, Japanese/Sohei", "Women in the Martial Arts", "Women in the Martial Arts: Britain and North America", "Women in the Martial Arts: China", "Women in the Martial Arts: Japan", "Wrestling and Grappling: China", "Wrestling and Grappling: Europe", "Wrestilng and Grappling: India", "Wrestling and Grappling: Japan", "Wrestling, Professional", "Written Texts: China", "Written Texts: India", "Written Texts: Japan", "Xingyiquan (Hsing I Ch'uan)", "Yongchun/Wing Chun", "Backside 180", "Backside 360", "Backside Caballerial", "Backside Half Cab", "Fakie Ollie", "Frontside 180", "Frontside 360", "Frontside Caballerial", "Frontside Half Cab", "Kickturn", "Nollie", "Nollie Backside 180", "Nollie Backside 360", "Nollie Frontside 180", "Nollie Frontside 360", "Ollie", "Ollie North", "Ollie South", "Switch Backside 180", "Switch Backside 360", "Switch Frontside 180", "Switch Frontside 360", "Switch Ollie", "Tic-Tac", "360 Flip", "360 Hardflip", "360 Ollie Heelflip", "360 Ollie Kickflip", "360 Pop Shove-it", "360 Shuvit", "540 Flip", "720 Flip", "Alpha Flip", "Anti Casper Flip", "Backside Bigspin", "Backside Flip", "Backside Half Cab Heelflip", "Backside Half Cab Kickflip", "Backside Heelflip", "Backside Kickflip", "Big Heelflip", "Bigflip", "Biggerflip", "Biggerspin", "Bigspin", "Bubble Flip", "Bullflip", "Caballerial Flip", "Camel Flip", "Casper Flip", "Daydream Flip", "De Comply", "Disco Flip", "Double Heelflip", "Double Kickflip", "Dragon Flip", "Fakie 360 Flip", "Fakie 360 Hardflip", "Fakie Backside Bigspin", "Fakie Backside Pop Shove-it", "Fakie Frontside Bigspin", "Fakie Frontside Pop Shove-it", "Fakie Hardflip", "Fakie Heelflip", "Fakie Inward Heelflip", "Fakie Kickflip", "Fakie Varial Heelflip", "Fakie Varial Kickflip", "Feather Flip", "Fingerflip", "Forward Flip", "Front Foot Impossible", "Frontside 360 Pop Shove it", "Frontside Bigspin", "Frontside Flip", "Frontside Half Cab Heelflip", "Frontside Half Cab Kickflip", "Frontside Heelflip", "Frontside Kickflip", "Frontside Pop Shove-it", "Gazelle Flip", "Gazelle Spin", "Ghetto Bird", "Gingersnap", "Grape Flip", "Half Cab", "Handstand Flip", "Hardflip", "Haslam Flip", "Heelflip", "Hospital Flip", "Illusion Flip", "Impossible", "Inward Heelflip", "Jesus Flip", "Kickback Flip", "Kickflip", "Kiwi Flip", "Laser Flip", "Late Kickflip", "Nerd Flip", "Nightmare Flip", "No Comply", "540", "720", "900", "Airwalk", "Benihana", "Cannonball", "Christ Air", "Crossbone", "Delmar Indy", "Indy", "Indy Grab", "Invert", "Japan Air", "Judo Air", "Madonna", "McTwist", "Melancholy Grab", "Melon", "Method Air", "Mute Air", "Nose Grab", "Rocket Air", "Sal Flip", "Seatbelt Grab", "Stiffy", "Superman Grab", "Varial", "Egg Plant", "Manual", "Nose Manual", "Varial Heelflip", "Varial Kickflip",\
@@ -362,7 +366,7 @@ def nano():
     result = random.sample(nano, 1)
     star = "***"
     print(star, result)
-    print(star, result, file=z)
+    print(usr, star, result, file=z)
 
 def entry():
     _entry = "Entry: "
@@ -375,7 +379,7 @@ def entry():
     rooms = (round(random.random()*102))
     _room = "Room"
     print(_entry, gate, phase, _floor, floors, _room, rooms)
-    print(_entry, gate, phase, _floor, floors, _room, rooms, file=z)
+    print(usr, _entry, gate, phase, _floor, floors, _room, rooms, file=z)
 
 def micasa():
     time.sleep(1)
@@ -383,21 +387,21 @@ def micasa():
     rooms = ["living room", "kitchen", "bedroom", "garden", "patio", "guest room", "garage", "work room", "library", "art room", "meditation room", "bath room", "temple"]
     micasa = random.sample(rooms, 1)
     print(mic, micasa)
-    print(mic, micasa, file=z)
+    print(usr, mic, micasa, file=z)
 
 def stuff():
     stu = "stuff:"
     stuff = ["sofa", "tv", "radio", "computer", "tablet", "phone", "refrigerator", "bed", "sink", "oven", "stove", "clock", "refreshments", "snacks", "cookies", "easel", "sketchpad", "laptop", "postcard", "table", "study table", "desk", "kitchen counter", "bible", "dining table", "chair", "gaming chair", "lamp", "light", "fruit", "speaker", "guitar", "piano", "synthesizer", "photo", "painting", "cdj", "vinyl", "electric guitar", "bass guitar", "monitor", "camera", "vinyl player", "gun", "iPod", "cctv", "bike", "car", "window", "door", "sweater", "ps5", "pillow", "blanket", "clothes", "dresser", "safe", "dhammapada", "keyboard", "koran", "paint", "paper", "brush", "tree", "pencil", "spraypaint", "drawing tablet", "drawing", "buddha", "air conditioner", "duster", "walkie", "grass", "mirror", "tools", "pen", "magazine", "book", "carpet", "mat", "zafu", "weed", "kush"]
     stuffs = random.sample(stuff, 3)
     print(stu, stuffs)
-    print(stu, stuffs, file=z)
+    print(usr, stu, stuffs, file=z)
 
 def worship():
     time.sleep(1)
     wor = "worship:"
     worship = "You worship in silence.."
     print(wor, worship)
-    print(wor, worship, file=z)
+    print(usr, wor, worship, file=z)
     time.sleep(3)
 
 def posting():
@@ -408,7 +412,7 @@ def posting():
     postings = (round(random.random()*4))
     defaults = (round(random.random()*15))
     print(_post, _have, postings, _posting, defaults, _default)
-    print(_post, _have, postings, _posting, defaults, _default, file=z)
+    print(usr, _post, _have, postings, _posting, defaults, _default, file=z)
            
 def muslim_prayer():
     time.sleep(3)
@@ -549,53 +553,53 @@ def muslim_prayer():
 
 def meditate():
     print("You sit and start to meditate...")
-    print("You sit and start to meditate...", file=z)
+    print(usr + "" + " " + "" + "You sit and start to meditate...", file=z)
     time.sleep(16)
     print("You finished meditating")
-    print("You finished meditating", file=z)
+    print(usr + "" + " " + "" + "You finished meditating", file=z)
     time.sleep(3)
 
 def sleep():
     print("You lay down and doze off...")
-    print("You lay down and doze off...", file=z)
+    print(usr + "" + " " + "" + "You lay down and doze off...", file=z)
     time.sleep(29)
     print("You wake up")
-    print("You wake up", file=z)
+    print(usr + "" + " " + "" + "You wake up", file=z)
     time.sleep(3)
 
 def eat():
     print("You prepare food and start to consume a meal...")
-    print("You prepare food and start to consume a meal...", file=z)
+    print(usr + "" + " " + "" + "You prepare food and start to consume a meal...", file=z)
     time.sleep(5)
     print("You have eaten")
-    print("You have eaten", file=z)
+    print(usr + "" + " " + "" + "You have eaten", file=z)
     time.sleep(3)
 
 def find_coins():
     print("You start to search around for coins...")
-    print("You start to search around for coins...", file=z)
+    print(usr + "" + " " + "" + "You start to search around for coins...", file=z)
     time.sleep(10)
     print("You found:")
     print("You found:", file=z)
     tin = (random.randint(0,100))
     coins = "coins: "
     print(coins, tin)
-    print(coins, tin, file=z)      
+    print(usr, coins, tin, file=z)      
     time.sleep(3)
 
 def slot():
     print("You pull on the slot lever...")
-    print("You pull on the slot lever...", file=z)
+    print(usr + "" + " " + "" + "You pull on the slot lever...", file=z)
     time.sleep(5)
     slot = random.choices(range(10), k=3)
     slots = "slot: "
     print(slots, slot)
-    print(slots, slot, file=z)
+    print(usr, slots, slot, file=z)
     time.sleep(3)
 
 def draw_card():
     print("You draw a card from a deck...")
-    print("You draw a card from a deck...", file=z)
+    print(usr + "" + " " + "" + "You draw a card from a deck...", file=z)
     time.sleep(2)
     deck = ["Ace of Hearts", "Two of Hearts", "Three of Hearts", "Four of Hearts", "Five of Hearts", "Six of Hearts", "Seven of Hearts", "Eight of Hearts", "Nine of Hearts", "Ten of Hearts", "Jack of Hearts", "Queen Of Hearts", "King of Hearts", "Ace of Clubs", "Two of Clubs", "Three of Clubs", "Four of Clubs", "Five of Clubs", "Six of Clubs", "Seven of Clubs", "Eight of Clubs", "Nine of Clubs", "Ten of Clubs", "Jack of Clubs", "Queen Of Clubs", "King of Clubs", "Ace of Diamonds", "Two of Diamonds", "Three of Diamonds", "Four of Diamonds", "Five of Diamonds", "Six of Diamonds", "Seven of Diamonds", "Eight of Diamonds", "Nine of Diamonds", "Ten of Diamonds", "Jack of Diamonds", "Queen Of Diamonds", "King of Diamonds", "Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades", "Five of Spades", "Six of Spades", "Seven of Spades", "Eight of Spades", "Nine of Spades", "Ten of Spades", "Jack of Spades", "Queen Of Spades", "King of Spades", "Joker", "Joker"]
     card = random.sample(deck, 1)
@@ -603,12 +607,12 @@ def draw_card():
     print("You drew:", file=z)
     cards = "card: "
     print(cards, card)
-    print(cards, card, file=z)
+    print(usr, cards, card, file=z)
     time.sleep(3)
 
 def search_for_items():
     print("You search around...")
-    print("You search around...", file=z)
+    print(usr + "" + " " + "" + "You search around...", file=z)
     time.sleep(10)
     items = ["empty bottle", "bottle of wine", "wine glass", "bottle of iced tea", "energy drink", "lemon juice", "pack of green peas", "shirt", "bed", "headphones", "earphones", "blanket", "tablet", "kindle", "pills", "pack of coffee beans", "cup of coffee", "junkfood", "medicine", "spoon", "fork", "Nintendo Switch", "laptop", "mobile phone", "electric fan", "chair", "guitar", "keyboard", "piano", "tv", "monitor", "oil", "hashish", "marijuana", "cigarette", "vape", "pillow", "dog food", "bike", "car", "scooter", "skateboard", "printer", "shards of glass", "garbage", "strips of sleather", "food", "bottle of water", "bible", "Dhammapada", "yoga mat", "helmet", "chewing gum", "vitamins", "shirt", "sweater", "pants", "working pants", "skirt", "underwear", "parachute", "gun", "knife", "sword", "katana", "oatmeal", "chain", "slippers", "shoes", "book", "wires", "credit card", "stove", "oven", "hat", "bucket hat", "baseball cap", "beanie", "hoodie", "necklace", "ring", "gold ring", "diamond ring", "diamond", "diamonds", "painting", "pencil", "ballpoint pen", "sketchpad", "crayon", "box of crayons", "paint", "spray paint", "fruit", "lettuce", "carrot", "watermelon", "orange", "apple", "banana", "pear", "gold", "gold bar", "pistol", "lantern", "lamp", "umbrella", "newspaper", "Sega", "ecstasy", "Nintendo 64", "calculator", "brownies", "pie", "loaf bread", "aviator shades", "shutter shades", "CD", "floppy disk", "mp3 player", "walkman", "cassette", "ticket", "food stub", "ski mask", "spear", "nunchucks", "frying pan", "beans", "charger", "guitar pick", "mic", "digicam", "GoPro", "night vision goggles", "sniper rifle", "DS4 Playstation controller", "CDJ", "Raybans", "smartwatch", "modem", "axe"]
     item = random.sample(items, 2)
@@ -616,12 +620,12 @@ def search_for_items():
     print("You found:", file=z)
     items = "items: "
     print(items, item)
-    print(items, item, file=z)
+    print(usr, items, item, file=z)
     time.sleep(3)
 
 def fly():
     print("You go to the airport and board a plane...")
-    print("You go to the airport and board a plane...", file=z)
+    print(usr + "" + " " + "" + "You go to the airport and board a plane...", file=z)
     time.sleep(15)
     print("You arrived in:")
     print("You arrived in:", file=z)
@@ -629,28 +633,28 @@ def fly():
     country = random.sample(countries, 1)
     fly = "fly: "
     print(fly, country)
-    print(fly, country, file=z)
+    print(usr, fly, country, file=z)
     time.sleep(3)
 
 def drink_coffee():
     print("You have coffee and feel the effect of caffeine...")
-    print("You have coffee and feel the effect of caffeine...", file=z)
+    print(usr + "" + " " + "" + "You have coffee and feel the effect of caffeine...", file=z)
     time.sleep(7)
     print("You finished drinking your coffee")
-    print("You finished drinking your coffee", file=z)
+    print(usr + "" + " " + "" + "You finished drinking your coffee", file=z)
     time.sleep(3)
 
 def drink_tea():
     print("You have tea...")
-    print("You have tea...", file=z)
+    print(usr + "" + " " + "" + "You have tea...", file=z)
     time.sleep(7)
     print("You finish your tea")
-    print("You finish your tea", file=z)
+    print(usr + "" + " " + "" + "You finish your tea", file=z)
     time.sleep(3)
 
 def surf():
     print("You enter the water and wait for a wave...")
-    print("You enter the water and wait for a wave...", file=z)
+    print(usr + "" + " " + "" + "You enter the water and wait for a wave...", file=z)
     time.sleep(15)
     print("You surfed:")
     print("You surfed:", file=z)
@@ -658,14 +662,14 @@ def surf():
     modnar = (round(random.random()*60,2))
     surf = "surfed: "
     print(surf, modnar)
-    print(surf, modnar, file=z)
+    print(usr, surf, modnar, file=z)
     print("..meters before you wiped-out")
     print("..meters before you wiped-out", file=z)
     time.sleep(3)
 
 def collections():
     print("You recall")
-    print("You recall", file=z)
+    print(usr + "" + " " + "" + "You recall", file=z)
     time.sleep(3)
     semit = (round(random.random()*666))
     collections = "collections: "
@@ -679,11 +683,11 @@ def collections():
     print(sitch, file=z)
     print("in your Satchel")
     print("in your Satchel", file=z)
-    print(collections, semit, sitch, file=z)
+    print(usr, collections, semit, sitch, file=z)
 
 def doodling():
     print("You pick up a calculator...")
-    print("You pick up a calculator...", file=z)
+    print(usr + "" + " " + "" + "You pick up a calculator...", file=z)
     time.sleep(5)
     print()
     print(file=z)
@@ -697,7 +701,7 @@ def doodling():
     mondar = (round(random.random()*999,8))
     doodling = "doodling: "
     print(doodling, mondar)
-    print(doodling, mondar, file=z)
+    print(usr, doodling, mondar, file=z)
     print()
     print(file=z)
 
@@ -707,7 +711,7 @@ def zen_melody():
     raondam = (round(random.random()*9999,9))
     zenmelody = "zen melody: "
     print(zenmelody, key, raondam)
-    print(zenmelody, key, raondam, file=z)
+    print(usr + "" + " " + "" + zenmelody, key, raondam, file=z)
 
 def value():
     letters1 = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n", "O", "o", "P", "p", "Q", "q", "R", "r", "S", "s", "T", "t", "U", "u", "V", "v", "W", "w", "X", "x", "Y", "y", "Z", "z"]
@@ -723,12 +727,12 @@ def value():
     value = (round(random.random()*9999999999,10))
     values = "value:"
     print(values, letter1, letter2, letter3, letter4, letter5, value)
-    print(values, letter1, letter2, letter3, letter4, letter5, value, file=z)
+    print(usr + "" + " " + "" + values, letter1, letter2, letter3, letter4, letter5, value, file=z)
 
 def bump():
     time.sleep(1.5)
     print("You can do it!")
-    print("You can do it!", file=z)
+    print(usr + "" + " " + "" + "You can do it!", file=z)
     time.sleep(3)
 
 def ma():
@@ -737,7 +741,7 @@ def ma():
     mart = random.sample(mstyles, 3)
     MA = "MA: "
     print(MA, mart)
-    print(MA, mart, file=z)
+    print(usr, MA, mart, file=z)
     print()
     print(file=z)
     print("-from the contents of Martial Arts of the World: An Encyclopedia")
@@ -753,7 +757,7 @@ def skate():
     trick = random.sample(tricks, 1)
     skate = "skate: "
     print(skate, trick)
-    print(skate, trick, file=z)
+    print(usr, skate, trick, file=z)
     time.sleep(3)
 
 def art():
@@ -764,7 +768,7 @@ def art():
     art = random.sample(styles, 1)
     arts = "art: "
     print(arts, art)
-    print(arts, art, file=z)
+    print(usr, arts, art, file=z)
     time.sleep(3)
 
 def radio():
@@ -776,13 +780,13 @@ def radio():
     music = random.sample(genres, 1)
     radio = "radio: "
     print(radio, music)
-    print(radio, music, file=z)
+    print(usr, radio, music, file=z)
     time.sleep(3)
 
 def give_alms():
     time.sleep(3)
     print("You gave alms to the needy")
-    print("You gave alms to the needy", file=z)
+    print(usr + "" + " " + "" + "You gave alms to the needy", file=z)
     time.sleep(3)
 
 def brawl():
@@ -793,7 +797,6 @@ def brawl():
     person = random.sample(people, 1)
     brawl = "brawl: "
     print(brawl, action, person)
-    print(brawl, action, person, file=z)
     time.sleep(3)
     print()
     print(file=z)
@@ -803,6 +806,7 @@ def brawl():
     randit = (random.randint(50,100))
     print(randit)
     print(randit, file=z)
+    print(usr, brawl, action, person, randit, file=z)
     time.sleep(3)
 
 def karate():
@@ -817,7 +821,7 @@ def karate():
     opponent = random.sample(opponents, 1)
     karate = "karate: "
     print(karate, radnti, opponent)
-    print(karate, radnti, opponent, file=z)   
+    print(usr, karate, radnti, opponent, file=z)   
     time.sleep(3)
 
 def koans():
@@ -829,7 +833,7 @@ def koans():
     koan = random.sample(koans, 1)
     koans = "koans: "
     print(koans, koan)
-    print(koans, koan, file=z)
+    print(usr, koans, koan, file=z)
     print()
     print(file=z)
     print("-Shoyoroku (E. Book of Serenity, C. Ts’ung-jung lu) A collection of 100 koans (50 are in LIFE), originally compiled in the 12th century by Wanshi Shogaku (C. Hung-chih Cheng-chüeh)")
@@ -837,7 +841,7 @@ def koans():
 
 def hipster_tarot():
     print("You draw four cards from a deck...")
-    print("You draw four cards from a deck...", file=z) 
+    print(usr + "" + " " + "" + "You draw four cards from a deck...", file=z) 
     time.sleep(4)
     deck = ["The Fool | Upright | Beginnings, innocence, spontaneity, a free spirit", "The Fool | Reversed | Holding back, recklessness, risk-taking", "The Fool | Upright | Manifestation, resourcfulness, power, inspired action", "The Fool | Reversed | Manipulation, poor planning, untapped talents", "The High Priestess | Upright | Intuition, sacred knowledge, the subconscious mind", "The High Priestess | Reversed | Secrets, disconnected from intuition, withdrawal and silence", "The Empress | Upright | Femininity, beauty, nature, nurturing, abundance", "The Empress | Reversed | Creative block, dependence on others", "The Emperor | Upright | Authority, establishment, structure, a father figure", "The Emperor | Reversed | Domination, excessive control, lack of discipline, inflexibility", "The Hierophant | Upright | Spiritual wisdom, religious beliefs, conformity, tradition,institutions", "The Hierophant | Reversed | Personal beliefs, freedom, challenging the status quo", "The Lovers | Upright | Love, harmony, relationships, values alignment, choices", "The Lovers | Reversed | Self-love, disharmony, imbalance, misalignment of values", "The Chariot | Upright | Control, willpower, success, action, determination", "The Chariot | Reversed | Self-discipline, opposition, lack of direction", "Strength | Upright | Strength, courage, persuasion, influence, compassion", "Strength | Reversed | Inner strength, self-doubt, low energy, raw emotion", "The Hermit | Upright | Soul-searching, introspection, being alone, inner guidance", "The Hermit | Reversed | Isolation, loneliness, withdrawal", "Wheel Of Fortune | Upright | Good luck, karma, life cycles, destiny, a turning point", "Wheel Of Fortune | Reversed | Bad luck, resistance to change, breaking cycles", "Justice | Upright | Justice, fairness, truth, cause and effect, law", "Justice | Reversed | Unfairness, lack of accountability, dishonesty", "The Hanged Man | Upright | Pause, surrender, letting go, new perspectives", "The Hanged Man | Reversed | Delays, resistance, stalling, indecision", "Death | Upright | Endings, change, transformation, transition", "Death | Reversed | Resistance to change, personal transformation, inner purging", "Temperance | Upright | Balance, moderation, patience, purpose", "Temperance | Reversed | Imbalance, excess, self-healing, re-alignment", "The Devil | Upright | Shadow self, attachment, addiction, restriction, sexuality", "The Devil | Reversed | Releasing limiting beliefs, exploring dark thoughts, detachment", "The Tower | Upright | Sudden change, upheaval, chaos, revelation, awakening", "The Tower | Reversed | Personal transformation, fear of change, averting disaster", "The Star | Upright | Hope, faith, purpose, renewal, spirituality", "The Star | Reversed | Lack of faith, despair, self-trust, disconnection", "The Moon | Upright | Lack of faith, despair, self-trust, disconnection", "The Moon | Reversed | Release of fear, repressed emotion, inner confusion", "The Sun | Upright | Positivity, fun, warmth, success, vitality", "The Sun | Reversed | Inner child, feeling down, overly optimistic", "Judgement | Upright | Judgement, rebirth, inner calling, absolution", "Judgement | Reversed | Self-doubt, inner critic, ignoring the call", "The World | Upright | Completion, integration, accomplishment, travel", "The World | Reversed | Seeking personal closure, short-cuts, delays", "Ace Of Cups | Upright | Love, new relationships, compassion, creativity.", "Ace Of Cups | Reversed | Self-love, intuition, repressed emotions." "Two Of Cups | Upright | Unified love, partnership, mutual attraction", "Two Of Cups | Reversed | Self-love, break-ups, disharmony, distrust.", "Three Of Cups | Upright | Celebration, friendship, creativity, collaborations.", "Three Of Cups | Reversed | Independence, alone time, hardcore partying, ‘three’s a crowd’.", "Four Of Cups | Upright | Meditation, contemplation, apathy, reevaluation.", "Four Of Cups | Reversed | Retreat, withdrawal, checking in for alignment.", "Five Of Cups | Upright | Retreat, withdrawal, checking in for alignment.", "Five Of Cups | Reversed | Personal setbacks, self-forgiveness, moving on.", "Six Of Cups | Upright | Revisiting the past, childhood memories, innocence, joy.", "Six Of Cups | Reversed | Living in the past, forgiveness, lacking playfulness.", "Seven Of Cups | Upright | Opportunities, choices, wishful thinking, illusion.", "Seven Of Cups | Reversed | Alignment, personal values, overwhelmed by choices.", "Eight Of Cups | Upright | Disappointment, abandonment, withdrawal, escapism.", "Eight Of Cups | Reversed | Trying one more time, indecision, aimless drifting, walking away.", "Nine Of Cups | Upright | Contentment, satisfaction, gratitude, wish come true.", "Nine Of Cups | Reversed | Inner happiness, materialism, dissatisfaction, indulgence.", "Ten Of Cups | Upright | Divine love, blissful relationships, harmony, alignment.", "Ten Of Cups | Reversed | Disconnection, misaligned values, struggling relationships.", "Page Of Cups | Upright | Creative opportunities, intuitive messages, curiosity, possibility.", "Page Of Cups | Reversed | New ideas, doubting intuition, creative blocks, emotional immaturity.", "Knight Of  Cups | Upright | Creativity, romance, charm, imagination, beauty.", "Knight Of Cups | Reversed | Overactive imagination, unrealistic, jealous, moody.", "Queen Of Cups | Upright | Compassionate, caring, emotionally stable, intuitive, in flow.", "Queen Of Cups | Reversed | Inner feelings, self-care, self-love, co-dependency.", "King Of Cups | Upright | Emotionally balanced, compassionate, diplomatic.", "King Of Cups | Reversed | Self-compassion, inner feelings, moodiness, emotionally manipulative.", "Ace Of Swords | Upright | Breakthroughs, new ideas, mental clarity, success", "Ace of Swords | Reversed | Inner clarity, re-thinking an idea, clouded judgement", "Two Of Swords | Upright | Difficult decisions, weighing up options, an impasse, avoidance", "Two Of Swords | Reversed | Indecision, confusion, information overload, stalemate", "Three Of Swords | Upright | Heartbreak, emotional pain, sorrow, grief, hurt", "Three Of Swords | Reversed | Negative self-talk, releasing pain, optimism, forgiveness", "Four Of Swords | Upright | Rest, relaxation, meditation, contemplation, recuperation", "Four Of Swords | Reversed | Exhaustion, burn-out, deep contemplation, stagnation", "Five Of Swords | Upright | Conflict, disagreements, competition, defeat, winning at all costs", "Five Of Swords | Reversed | Reconciliation, making amends, past resentment", "Six Of Swords | Upright | Transition, change, rite of passage, releasing baggage.", "Six Of Swords | Reversed | Personal transition, resistance to change, unfinished business", "Seven Of Swords | Upright | Betrayal, deception, getting away with something, acting strategically", "Seven Of Swords | Reversed | Imposter syndrome, self-deceit, keeping secrets", "Eight Of Swords | Upright | Negative thoughts, self-imposed restriction, imprisonment, victim mentality", "Eight Of Swords | Reversed | Self-limiting beliefs, inner critic, releasing negative thoughts, open to new perspectives", "Nine Of Swords | Upright | Anxiety, worry, fear, depression, nightmares", "Nine Of Swords | Reversed | Inner turmoil, deep-seated fears, secrets, releasing worry", "Ten Of Swords | Upright | Painful endings, deep wounds, betrayal, loss, crisis", "Ten Of Swords | Reversed | Recovery, regeneration, resisting an inevitable end", "Page Of Swords | Upright | New ideas, curiosity, thirst for knowledge, new ways of communicating", "Page Of Swords | Reversed | Self-expression, all talk and no action, haphazard action, haste", "Knight Of Swords | Upright | Ambitious, action-oriented, driven to succeed, fast-thinking", "Knight Of Swords | Reversed | Restless, unfocused, impulsive, burn-out", "Queen Of Swords | Upright | Independent, unbiased judgement, clear boundaries, direct communication", "Queen Of Swords | Reversed | Overly-emotional, easily influenced, bitchy, cold-hearted", "King Of Swords | Upright | Mental clarity, intellectual power, authority, truth", "King Of Swords | Reversed | Quiet power, inner truth, misuse of power, manipulation", "Ace Of Pentacles | Upright | A new financial or career opportunity, manifestation, abundance", "Ace Of Pentacles | Reversed | Lost opportunity, lack of planning and foresight", "Two Of Pentacles | Upright | Multiple priorities, time management, prioritisation, adaptability.", "Two Of Pentacles | Reversed | Over-committed, disorganisation, reprioritisation.", "Three Of Pentacles | Upright | Teamwork, collaboration, learning, implementation.", "Three Of Pentacles | Reversed | Disharmony, misalignment, working alone.", "Four Of Pentacles | Upright | Saving money, security, conservatism, scarcity, control.", "Four Of Pentacles | Reversed | Over-spending, greed, self-protection.", "Five Of Pentacles | Upright | Financial loss, poverty, lack mindset, isolation, worry.", "Five Of Pentacles | Reversed | Recovery from financial loss, spiritual poverty.", "Six Of Pentacles | Upright | Giving, receiving, sharing wealth, generosity, charity.", "Six Of Pentacles | Reversed | Self-care, unpaid debts, one-sided charity.", "Seven Of Pentacles | Upright | Long-term view, sustainable results, perseverance, investment.", "Seven Of Pentacles | Reversed | Lack of long-term vision, limited success or reward.", "Eight Of Pentacles | Upright | Apprenticeship, repetitive tasks, mastery, skill development.", "Eight Of Pentacles | Reversed | Self-development, perfectionism, misdirected activity.", "Nine Of Pentacles | Upright | Abundance, luxury, self-sufficiency, financial independence.", "Nine Of Pentacles | Reversed | Self-worth, over-investment in work, hustling.", "Ten Of Pentacles | Upright | Wealth, financial security, family, long-term success, contribution.", "Ten Of Pentacles | Reversed | The dark side of wealth, financial failure or loss.", "Page Of Pentacles | Upright | Manifestation, financial opportunity, skill development.", "Page Of Pentacles | Reversed | Lack of progress, procrastination, learn from failure.", "Knight Of Pentacles | Upright | Hard work, productivity, routine, conservatism.", "Knight Of Pentacles | Reversed | Self-discipline, boredom, feeling ‘stuck’, perfectionism.", "Queen Of Pentacles | Upright | Nurturing, practical, providing financially, a working parent.", "Queen Of Pentacles | Reversed | Financial independence, self-care, work-home conflict", "King Of Pentacles | Upright | Wealth, business, leadership, security, discipline, abundance.", "King Of Pentacles | Reversed | Financially inept, obsessed with wealth and status, stubborn.", "Ace Of Wands | Upright | Inspiration, new opportunities, growth, potential", "Ace Of Wands | Reversed | An emerging idea, lack of direction, distractions, delays", "Two Of Wands | Upright | Future planning, progress, decisions, discovery", "Two Of Wands | Reversed | Personal goals, inner alignment, fear of unknown, lack of planning", "Three Of Wands | Upright | Progress, expansion, foresight, overseas opportunities", "Three Of Wands | Reversed | Playing small, lack of foresight, unexpected delays", "Four Of Wands | Upright | Celebration, joy, harmony, relaxation, homecoming", "Four Of Wands | Reversed | Personal celebration, inner harmony, conflict with others, transition.", "Five Of Wands | Upright | Conflict, disagreements, competition, tension, diversity", "Five Of Wands | Reversed | Inner conflict, conflict avoidance, tension release", "Six Of Wands | Upright | Success, public recognition, progress, self-confidence", "Six Of Wands | Reversed | Private achievement, personal definition of success, fall from grace, egotism", "Seven Of Wands | Upright | Challenge, competition, protection, perseverance", "Seven Of Wands | Reversed | Exhaustion, giving up, overwhelmed", "Eight Of Wands | Upright | Movement, fast paced change, action, alignment, air travel", "Eight Of Wands | Reversed | Delays, frustration, resisting change, internal alignment", "Nine Of Wands | Upright | Resilience, courage, persistence, test of faith, boundaries", "Nine Of Wands | Reversed | Inner resources, struggle, overwhelm, defensive, paranoia", "Ten Of Wands | Upright | Burden, extra responsibility, hard work, completion", "Ten Of Wands | Reversed | Doing it all, carrying the burden, delegation, release", "Page Of Wands | Upright | Inspiration, ideas, discovery, limitless potential, free spirit", "Page Of Wands | Reversed | Newly-formed ideas, redirecting energy, self-limiting beliefs, a spiritual path", "Knight Of Wands | Upright | Energy, passion, inspired action, adventure, impulsiveness", "Knight Of Wands | Reversed | Passion project, haste, scattered energy, delays, frustration", "Queen Of Wands | Upright | Courage, confidence, independence, social butterfly, determination", "Queen Of Wands | Reversed | Self-respect, self-confidence, introverted, re-establish sense of self", "King Of Wands | Upright | Natural-born leader, vision, entrepreneur, honour", "King Of Wands | Reversed |  Impulsiveness, haste, ruthless, high expectations"]
     card = random.sample(deck, 4)
@@ -845,7 +849,7 @@ def hipster_tarot():
     print("You drew:", file=z)
     tarot = "tarot: "
     print(tarot, card)
-    print(tarot, card, file=z)
+    print(usr, tarot, card, file=z)
 
 def hack():
     time.sleep(5)
@@ -877,7 +881,7 @@ def hack():
     money = random.sample(monies, 1)
     print(money)
     hack = "hack:"
-    print(hack, youm, country, serv, nega, amdorn, nega, andorm, andg, tidnar, money, file=z)    
+    print(usr, hack, youm, country, serv, nega, amdorn, nega, andorm, andg, tidnar, money, file=z)    
     time.sleep(3)
 
 def spar():
@@ -888,7 +892,7 @@ def spar():
     kick = random.sample(kicks, 1)
     spar = "spar: "
     print(spar, action, kick)
-    print(spar, action, kick, file=z)
+    print(usr, spar, action, kick, file=z)
     time.sleep(3)
 
 def train():
@@ -900,17 +904,17 @@ def train():
     num = random.sample(nums, 1)
     train = "train: "
     print(train, num)
-    print(train, num, file=z)
+    print(usr, train, num, file=z)
     print("push-ups")
     print("push-ups", file=z)
     time.sleep(3)
 
 def rest():
     print("You start to rest...")
-    print("You start to rest...", file=z)
+    print(usr + "" + " " + "" + "You start to rest...", file=z)
     time.sleep(8)
     print("You rested")
-    print("You rested", file=z)
+    print(usr + "" + " " + "" + "You rested", file=z)
     time.sleep(3)
 
 def haiku():
@@ -923,7 +927,7 @@ def haiku():
     end = random.sample(ending, 1)
     haiku = "haiku: "
     print(haiku, start, mid, end)
-    print(haiku, start, mid, end, file=z)
+    print(usr, haiku, start, mid, end, file=z)
 
 def psalms():
     time.sleep(5)
@@ -937,7 +941,7 @@ def psalms():
     verse = random.sample(verses, 1)
     psalms = "psalms: "
     print(psalms, verse)
-    print(psalms, verse, file=z)
+    print(usr, psalms, verse, file=z)
 
 def dhammapada():
     time.sleep(2)
@@ -956,7 +960,7 @@ def dhammapada():
     verse = random.sample(dhammapada, 2)
     dhammapad = "dhammapada: "
     print(dhammapad, verse)
-    print(dhammapad, verse, file=z)
+    print(usr, dhammapad, verse, file=z)
     print()
     print(file=z)
 
@@ -974,14 +978,14 @@ def koran():
     verse = random.sample(koran, 5)
     kor = "koran: "
     print(kor, verse)
-    print(kor, verse, file=z)
+    print(usr, kor, verse, file=z)
     print()
     print(file=z)
 
 def message():
     chat = input("$ ")
-    print("$" + "" + usr + "" + " " + "" + "$" + "" + " " + "" + chat)
-    print("$" + "" + usr + "" + " " + "" + "$" + "" + " " + "" + chat, file=z)
+    print("$" + "" + usr, chat)
+    print("$" + "" + usr, chat, file=z)
     for _ in range(3):
         time.sleep(random.randint(1,3))
         print()
@@ -991,7 +995,7 @@ def message():
         chat = random.sample(chats, 1)
         ct = datetime.datetime.now()
         print(lokalhost, chat, ct)
-        print(lokalhost, chat, ct, file=z)
+        print(usr, lokalhost, chat, ct, file=z)
 
 def souls():
     time.sleep(4)
@@ -1004,14 +1008,14 @@ def souls():
         soulchat = random.sample(soulchats, 1)
         souls = "souls: "
         print(souls, anrdom, soulchat)
-        print(souls, anrdom, soulchat, file=z)
+        print(usr, souls, anrdom, soulchat, file=z)
 
 def c():
     chat2 = input("chat: ")
     print()
     print(file=z)
-    print("You: " + "" + chat2)
-    print("You: " + "" + chat2, file=z)
+    print(usr + "" + " " + "" + "You: " + "" + chat2)
+    print(usr + "" + " " + "" + "You: " + "" + chat2, file=z)
     for _ in range(6):
         print()
         time.sleep(random.randint(1,4))
@@ -1021,7 +1025,7 @@ def c():
         kchat = random.sample(chatso, 1)
         c = "c: "
         print(c, kchatz, kchat)
-        print(c, kchatz, kchat, file=z)
+        print(usr, c, kchatz, kchat, file=z)
 
 def asciii():
     pr1 = (round(random.random()*99999999999999999999999999999999999999999))
@@ -1063,13 +1067,13 @@ def asciii():
 
 def mp3():
     print("You queue four tracks from an mp3 player that you found on the train...")
-    print("You queue four tracks from an mp3 player that you found on the train...", file=z)
+    print(usr + "" + " " + "" + "You queue four tracks from an mp3 player that you found on the train...", file=z)
     time.sleep(4)
     tracks = ["NO RULES by Mija, bloody white", "How Low by Ludacris", "BURN IT DOWN by Kayzo", "COUNT DANKULA by GENGHAR, GHASTLY", "Chum by Earl Sweatshirt", "O.P.U.S. by Subtronics", "Cyclops Rocks by Subtronics", "Wyclef Jean by Young Thug", "Wild for the Night by A$AP Rocky, Skrillex", "Hercules by Young Thug", "Angels by A$AP Rocky", "F**kin' Problems by A$AP Rocky, Drake, 2 Chainz, Kendrick Lamar", "Goldie by A$AP Rocky", "Don't Think It Over by Her's", "In My Mind - Deathpact Reprise by ILLENIUM, Excision, HALIENE, Deathpact", "Morning Star's Fall by Caster, Mantis", "Worldwide Suicide by In Hearts Wake, PhaseOne", "Never Let Go by Dion Timmer, Haley Maze", "Dont Wake Me Up by Oliverse", "Someone Else by Bear Grillz, Elle Vee", "Bottle Of Rain by Kayzo, POORSTACY", "GIGACHAD by Kai Wachi", "You're Gonna Love Me by Eliminate, Leah Culver", "Love, Love, Love by As Tall As Lions", "MakeDamnSure by Taking Back Sunday", "Kings And Queens by Thirty Seconds To Mars", "Maps by Yeah Yeah Yeahs", "Poetically Pathetic by Amber Pacific", "Tonight by FM Static", "Anthem Of Our Dying Day by Story Of The Year", "MAKE U MISS ME by Kayzo, Seon", "NEWS FLASH by Kayzo, Kamiyada+", "Fight or Flight by Alison Wonderland, MEMBA", "YUKON (INTERLUDE) by Joji", "My Hero by Foo Fighters", "Called Out In The Dark by Snow Patrol", "my god by Trevor Hall", "Real Love by Jess Glynne, Clean Bandit", "MIND YOUR BUSINESS by will.i.am, Britney Spears", "Obstacle 1 by Interpol", "Full Circle by HAELOS", "Hold On by HAELOS", "Fire Ina Hole by Method Man, Redman", "Rockit by Herbie Hancock", "Hymn For The Weekend by Coldplay", "Agent Orange by Slapshock", "I'm Gonna Be by Post Malone", "I'm Not Okay by My Chemical Romance", "Rude Boy by Rihanna", "D.O.A. (Death Of Auto-Tune) by JAY-Z", "Roses by The Chainsmokers, ROZES", "Stick Stickly by Attack Attack!", "Jail pt 2 by Kanye West", "Risk by Deftones", "This Is What You Came For by Calvin Harris, Rihanna", "Hot-n-Fun by N.E.R.D, Nelly Furtado", "Work by Rihanna, Drake", "777 by Kid Trunks, XXXTENTACION", "Music by Madonna", "What's My Name by Rihanna, Drake", "Love Never Felt So Good by Michael Jackson, Justin Timberlake", "Sweet Disposition by The Temper Trap", "Forrest Gump by Frank Ocean", "Purification by Purification", "Total Liberation by Gather", "Soaked In Torment by All Out War", "Scream & Shout by will.i.am, Britney Spears", "Decode by Paramore", "Miracle by Paramore", "Messiah by Alison Wonderland, M-Phazes", "Heart Skipped A Beat by The xx", "Basic Space by The xx", "Intro by The xx", "Islands by The xx", "Crystalized by The xx", "VCR by The xx", "Mood Ring by Lorde", "Sudden Desire by Hayley Williams", "August 10 by Khruangbin", "The Pioneers by Bloc Party", "Chasing Cars by Snow Patrol", "RUNNING by The Kid LAROI", "Shake It by Metro Station", "The Less I Know The Better by Tame Impala", "Miss The Rage by Trippie Red, Playboi Carti", "This Is America by Childish Gambino", "Consistency by Megan Thee Stallion, Jhene Aiko", "Flexing So Hard by Higher Brothers", "Laundry by QUIX", "Cologne by Clean Bandit, Nikki Cislyn, Javeon", "Pachuca Sunrise by Minus The Bear", "Feeling Like The End by Joji", "Nomadic by Higher Brothers, Joji", "Upper Echelon by Travis Scott, T.I., 2 Chainz", "Same Ol' Mistakes by Rihanna", "Power Trip by J. Cole, Miguel", "Hits From The Bong by Cypress Hill", "Y.O.U. by Method Man, Redman"]
     music = random.sample(tracks, 4)
     mp3 = "mp3: "
     print(mp3, music)
-    print(mp3, music, file=z)
+    print(usr, mp3, music, file=z)
     time.sleep(3)
 
 def monopoly():
@@ -1091,7 +1095,7 @@ def monopoly():
     print("And landed in =", file=z)
     monopoly = "monopoly: "
     print(monopoly, box)
-    print(monopoly, roll1, roll2, box, file=z)
+    print(usr, monopoly, roll1, roll2, box, file=z)
     time.sleep(3)
 
 def equips():
@@ -1130,7 +1134,7 @@ def equips():
     print(file=z)
     equips = "equips: "
     print(equips, head, torso, hand, legs, feet)
-    print(equips, head, torso, hand, legs, feet, file=z)
+    print(usr, equips, head, torso, hand, legs, feet, file=z)
 
 def rpg():
     time.sleep(2)
@@ -1138,7 +1142,7 @@ def rpg():
     path = random.sample(paths, 1)
     rpg = "rpg: "
     print(rpg, path)
-    print(rpg, path, file=z)
+    print(usr, rpg, path, file=z)
     time.sleep(3)
 
 def archery():
@@ -1146,7 +1150,7 @@ def archery():
     print()
     print(file=z)
     print("You aim your bow..")
-    print("You aim your bow..", file=z)
+    print(usr + "" + " " + "" + "You aim your bow..", file=z)
     time.sleep(2)
     print("You hit:")
     print("You hit:", file=z)
@@ -1161,7 +1165,7 @@ def archery():
     print("percent accuracy")
     print("percent accuracy", file=z)
     archery = "archery: "
-    print(archery, num, raditn, file=z)
+    print(usr, archery, num, raditn, file=z)
     time.sleep(3)
 
 def color_key():
@@ -1170,7 +1174,7 @@ def color_key():
     colors = random.sample(color, 5)
     colorkey = "color key: "
     print(colorkey, colors)
-    print(colorkey, colors, file=z)
+    print(usr, colorkey, colors, file=z)
 
 def magic():
     opp = "OPPONENT"
@@ -1233,14 +1237,14 @@ def magic():
     turnt = random.sample(turn, 1)
     print(turnt)
     magic = "magic:"
-    print(magic, opp, hand, hand1, hand2, hand3, hand4, hand5, hand6, hand7, nexto, next1, fromb, you, hand, hand21, hand22, hand23, hand24, hand25, hand26, hand27, nexto, next2, fromc, turnt, file=z)
+    print(usr, magic, opp, hand, hand1, hand2, hand3, hand4, hand5, hand6, hand7, nexto, next1, fromb, you, hand, hand21, hand22, hand23, hand24, hand25, hand26, hand27, nexto, next2, fromc, turnt, file=z)
 
 def football():
     football = ["touchdown", "touchdown", "touchdown", "first down", "first down", "first down", "first down", "second down", "second down", "second down", "third down", "the path is clear", "the path is clear", "the path is clear", "the path is clear", "the path is clear", "the path is clear", "the path is clear", "the path is clear", "the path is clear", "there are 3 guards ahead of you", "there are 3 guards ahead of you", "there are 3 guards ahead of you", "there are 4 guards ahead of you", "there are 2 guards ahead of you", "there are 2 guards ahead of you", "there are 2 guards ahead of you", "there is 1 guard ahead of you", "there is 1 guard ahead of you"]
     fball= random.sample(football, 1)
     footballs = "football: "
     print(footballs, fball)
-    print(footballs, fball, file=z)
+    print(usr, footballs, fball, file=z)
 
 def mapp():
     print()
@@ -1251,12 +1255,12 @@ def mapp():
     mape = random.sample(maps, 100)
     mapd = "map: "
     print(mapd, mape)
-    print(mapd, mape, file=z)
+    print(usr, mapd, mape, file=z)
 
 def auto_mat():
     time.sleep(1)
     print("(30) processes will be queued...")
-    print("(30) processes will be queued...", file=z)
+    print(usr + "" + " " + "" + "(30) processes will be queued...", file=z)
     time.sleep(3)
     for _ in range(30):
         print()
@@ -1266,7 +1270,7 @@ def auto_mat():
     print()
     print(file=z)
     print("/processes finished!")
-    print("/processes finished!", file=z)
+    print(usr + "" + " " + "" + "/processes finished!", file=z)
     print()
     print(file=z)
 
@@ -1328,8 +1332,8 @@ def choice():
     while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra' and choice !='License' and choice !='police' and choice !='prad' and choice !='climb' and choice !='chemistry' and choice !='ch' and choice !='weapon start' and choice !='wstart' and choice !='teletubby' and choice !='note' and choice !='save' and choice !='journal' and choice !='version' and choice !='ai' and choice !='auto-mat' and choice !='AAM':
         print()
         print(file=z)
-        choice = input(usr + "" + " " + "" + "$" + "" + " ")
-        print(usr + "" + " " + "" + "$" + "" + " " + choice, file=z)
+        choice = input(usr)
+        print(usr, choice, file=z)
 
 
         if choice == "version":
@@ -1574,7 +1578,7 @@ def choice():
 
         if choice == "donate":
             print("Contact the developer at akiraliwanag@gmail.com")
-            print("Contact the developer at akiraliwanag@gmail.com", file=z)
+            print(usr + "" + " " + "" + "Contact the developer at akiraliwanag@gmail.com", file=z)
             time.sleep(5)
 
         if choice == "exit":
