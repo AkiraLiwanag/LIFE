@@ -15,7 +15,7 @@ print("[This saves to LIFE-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. LIFE-28.0 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> I.S. LIFE-29.0 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -27,7 +27,7 @@ print ("type 'commands'")
 print ("type 'commands'", file=z)
 
 def commands():
-    print(" version | [blank input] for nano | note / journal / save | search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message [lh], brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby, (ai) auto-mat [AAM], {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}")
+    print(" version | [blank input] for nano | note / journal / save | search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message [lh], brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start (wstart), teletubby, (ai) auto-mat [AAM], {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}, [ID / IDC]")
 
 def print_time():
     t_time = datetime.datetime.now()
@@ -1678,7 +1678,7 @@ def auto_mat():
     for _ in range(30):
         print()
         time.sleep(2)
-        function_list = [version, print_time, pray, climb, prayer, stats, progress, light_incense, hebrews, teletubby, legal_terms, biology, chemistry, patient_simu, earth_science, psychology, medicals, license, police, clearance, nano, entry, micasa, stuff, worship, posting, meditate, sleep, eat, find_coins, slot, draw_card, search_for_items, fly, drink_coffee, drink_tea, surf, collections, doodling, zen_melody, value, bump, ma, skate, art, radio, give_alms, brawl, karate, koans, hipster_tarot, hack, spar, train, rest, haiku, psalms, dhammapada, koran, message, souls, c, asciii, mp3, monopoly, equips, rpg, archery, color_key, magic, football, mapp]
+        function_list = [version, print_time, pray, climb, prayer, stats, progress, light_incense, hebrews, teletubby, legal_terms, biology, chemistry, patient_simu, earth_science, psychology, medicals, license, police, clearance, nano, entry, micasa, stuff, worship, posting, meditate, sleep, eat, find_coins, slot, draw_card, search_for_items, fly, drink_coffee, drink_tea, surf, collections, doodling, zen_melody, value, bump, ma, skate, art, radio, give_alms, brawl, karate, koans, hipster_tarot, hack, spar, train, rest, haiku, psalms, dhammapada, koran, message, souls, c, asciii, mp3, monopoly, equips, rpg, archery, color_key, magic, football, mapp, ID, IDC]
         random.choice(function_list)()
     print()
     print(file=z)
@@ -1686,6 +1686,20 @@ def auto_mat():
     print(usr + "" + " " + "" + "/processes finished!", file=z)
     print()
     print(file=z)
+
+def ID():
+    ct = datetime.datetime.now()
+    ID = "ID:"
+    log = "[Logged-in]"
+    print(usr, ID, log, ct)
+    print(usr, ID, log, ct, file=z)
+
+def IDC():
+    ct = datetime.datetime.now()
+    IDC = "IDC:"
+    log = "[Logged-out]"
+    print(usr, IDC, log, ct)
+    print(usr, IDC, log, ct, file=z)
 
 def weapon_start():
     def random_function():
@@ -1742,7 +1756,7 @@ def weapon_start():
 
 def choice():
     choice = ''
-    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra' and choice !='License' and choice !='police' and choice !='prad' and choice !='climb' and choice !='chemistry' and choice !='ch' and choice !='weapon start' and choice !='wstart' and choice !='teletubby' and choice !='note' and choice !='save' and choice !='journal' and choice !='version' and choice !='ai' and choice !='auto-mat' and choice !='AAM':
+    while choice !='pray' and choice !='slot' and choice !='search for items' and choice !='surf' and choice !='sleep' and choice !='eat' and choice !='meditate' and choice !='find coins' and choice !='draw card' and choice !='fly' and choice !='drink coffee' and choice !='drink tea' and choice !='surf' and choice !='dhammapada' and choice !='skate' and choice !='art' and choice !='give alms' and choice !='radio' and choice !='hack' and choice !='message' and choice !='brawl' and choice !='souls'and choice !='hipster tarot' and choice !='mp3' and choice !='spar' and choice !='train' and choice !='rest' and choice !='psalms' and choice !='haiku' and choice !='muslim prayer' and choice !='karate' and choice !='koans' and choice !='equips' and choice !='rpg' and choice !='archery' and choice !='color key' and choice !='doodling' and choice !='BUMP' and choice !='MA' and choice !='Magic' and choice !='commands' and choice !='ascii' and choice !='zen melody' and choice !='monopoly' and choice !='light incense' and choice  !='stats' and choice !='prayer' and choice !='progress' and choice !='collections' and choice !='football' and choice !='c' and choice !='map' and choice !='search' and choice !='print time' and choice !='entry' and choice !='posting' and choice !='koran' and choice !='heBrews' and choice !='Medicals' and choice !='M' and choice !='Clearance' and choice !='MiCasa' and choice !='stuff' and choice !='worship' and choice !='Earth Science' and choice !='SCI' and choice !='value' and choice !='psychology' and choice !='psyc' and choice !='Patient Simu' and choice !='biology' and choice !='B' and choice !='legal terms' and choice !='Law' and choice !='the heart sutra' and choice !='License' and choice !='police' and choice !='prad' and choice !='climb' and choice !='chemistry' and choice !='ch' and choice !='weapon start' and choice !='wstart' and choice !='teletubby' and choice !='note' and choice !='save' and choice !='journal' and choice !='version' and choice !='ai' and choice !='auto-mat' and choice !='AAM' and choice !='ID' and choice !='IDC':
         print()
         print(file=z)
         choice = input(usr)
@@ -1913,6 +1927,12 @@ def choice():
 
         if choice == "skate":
             skate()
+
+        if choice == "ID":
+            ID()
+
+        if choice == "IDC":
+            IDC()
 
         if choice == "art":
             art()
