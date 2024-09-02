@@ -19,5 +19,6 @@ Functions:
 
 -----------------------------------------------------------------------
 
+WEB-APP : https://akiraliwanag.pyscriptapps.com/lpro
 LIFE-pro.nano : https://is-life-pro.weebly.com
 NPCC [Non-Playable Characters Computer] : https://github.com/AkiraLiwanag/NPCC
