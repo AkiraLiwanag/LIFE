@@ -1,3 +1,7 @@
+This has project has been renamed "Destiny" and has since moved to [https](https://github.com/AkiraLiwanag/Destiny)
+
+________________________________________________________________________________________
+
 A Life game, created by Akira P. Liwanag 
 Incubator Studios
 
