@@ -1,4 +1,4 @@
-This has project has been renamed "Destiny" and has since moved to [https](https://github.com/AkiraLiwanag/Destiny)
+This has project has been renamed "Destiny" and has since moved to [akiraliwanag/destiny](https://github.com/AkiraLiwanag/Destiny)
 
 ________________________________________________________________________________________
 
